@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Dice.Views.DicePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:c="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+    xmlns:res="clr-namespace:Dice.Resources">
+  <ContentPage.Content>
+    <c:CircleStackLayout>
+      <Button
+        Text="Back"
+        Clicked="Back"
+      />
+      <FlexLayout x:Name="diceList" HorizontalOptions="Center" VerticalOptions="Center" />
+    </c:CircleStackLayout>
+  </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Dice.Views.RollPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:c="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+    xmlns:res="clr-namespace:Dice.Resources">
+  <ContentPage.Content>
+    <StackLayout
+      Orientation="Vertical"
+      HorizontalOptions="CenterAndExpand"
+      VerticalOptions="FillAndExpand"
+     >
+      <ImageButton
+        HorizontalOptions="Center"
+        VerticalOptions="Start"
+        Clicked="Add_Click"
+        Source="Add.png"
+      />
+      <StackLayout
+        Orientation="Horizontal"
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="Fill"
+      >
+        <Button
+          Clicked="Roll_Click"
+          Text="Roll"
+          HorizontalOptions="Start"
+        />
+        <Label
+          x:Name="totalLabel"
+          HorizontalOptions="Center"
+        />
+        <Button
+          Clicked="Clear_Click"
+          Text="Clear"
+          HorizontalOptions="End"
+        />
+      </StackLayout>
+      <c:CircleScrollView
+        x:Name="rollResult"
+        HorizontalOptions="CenterAndExpand"
+      />
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
