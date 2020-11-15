@@ -4,43 +4,81 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:c="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
-    xmlns:res="clr-namespace:Dice.Resources">
-  <ContentPage.Content>
-    <StackLayout
-      Orientation="Vertical"
-      HorizontalOptions="CenterAndExpand"
-      VerticalOptions="FillAndExpand"
-     >
+    xmlns:res="clr-namespace:Dice.Resources"
+    BackgroundColor="Gray"
+  >
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="1*"/>
+      <ColumnDefinition Width="12*"/>
+      <ColumnDefinition Width="74*"/>
+      <ColumnDefinition Width="12*"/>
+      <ColumnDefinition Width="1*"/>
+    </Grid.ColumnDefinitions>
+
+    <ImageButton
+      Grid.Row="0"
+      Grid.Column="1"
+      VerticalOptions="Center"
+      Clicked="Roll_Click"
+      Source="Roll.png"
+    />
+
+    <Grid
+      Grid.Row="0"
+      Grid.Column="2"
+      HorizontalOptions="Center"
+      VerticalOptions="Fill"
+    >
+      <Grid.RowDefinitions>
+        <RowDefinition Height="1*"/>
+        <RowDefinition Height="12*"/>
+        <RowDefinition Height="5*"/>
+        <RowDefinition Height="76*"/>
+        <RowDefinition Height="5*"/>
+        <RowDefinition Height="1*"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+
       <ImageButton
+        Grid.Row="1"
+        Grid.Column="0"
+        x:Name="addButton"
         HorizontalOptions="Center"
-        VerticalOptions="Start"
         Clicked="Add_Click"
         Source="Add.png"
       />
-      <StackLayout
-        Orientation="Horizontal"
-        HorizontalOptions="CenterAndExpand"
-        VerticalOptions="Fill"
-      >
-        <Button
-          Clicked="Roll_Click"
-          Text="Roll"
-          HorizontalOptions="Start"
-        />
-        <Label
-          x:Name="totalLabel"
-          HorizontalOptions="Center"
-        />
-        <Button
-          Clicked="Clear_Click"
-          Text="Clear"
-          HorizontalOptions="End"
-        />
-      </StackLayout>
-      <c:CircleScrollView
-        x:Name="rollResult"
-        HorizontalOptions="CenterAndExpand"
+      <Label
+        Grid.Row="2"
+        Grid.Column="0"
+        HorizontalOptions="Center"
+        x:Name="totalLabel"
       />
-    </StackLayout>
-  </ContentPage.Content>
+      <ScrollView
+        Grid.Row="3"
+        Grid.Column="0"
+        x:Name="rollResult"
+        HorizontalOptions="FillAndExpand"
+      />
+      <ContentView
+        Grid.Row="4"
+        Grid.Column="0"
+        x:Name="pageBar"
+        HorizontalOptions="Fill"
+      />
+    </Grid>
+
+    <ImageButton
+      Grid.Row="0"
+      Grid.Column="3"
+      VerticalOptions="Center"
+      Clicked="Clear_Click"
+      Source="ClearMenu.png"
+    />
+  </Grid>
 </ContentPage>

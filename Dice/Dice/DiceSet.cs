@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Dice.Dice
 {
@@ -66,6 +67,43 @@ namespace Dice.Dice
       }
 
       return results;
+    }
+
+    public byte[] Serialize()
+    {
+      var bytes = new List<byte>();
+
+      var count = dice.Keys.Count;
+      bytes.AddRange(BitConverter.GetBytes(count));
+      
+      foreach(var key in dice.Keys)
+      {
+        bytes.AddRange(BitConverter.GetBytes((int)key));
+        bytes.AddRange(BitConverter.GetBytes(dice[key]));
+      }
+
+      return bytes.ToArray();
+    }
+
+    public static DiceSet Deserialize(byte[] input, out int length, int offset = 0)
+    {
+      int initialOffset = offset;
+      var count = BitConverter.ToInt32(input, offset);
+      offset += 4;
+      var set = new DiceSet();
+
+      for(int i = 0; i < count; i++)
+      {
+        D key = (D)BitConverter.ToInt32(input, offset);
+        offset += 4;
+        int value = BitConverter.ToInt32(input, offset);
+        offset += 4;
+        set.dice.Add(key, value);
+      }
+
+      length = offset - initialOffset;
+
+      return set;
     }
   }
 }

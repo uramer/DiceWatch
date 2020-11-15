@@ -1,7 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using Dice.Dice;
+using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace Dice.Dice
+namespace Dice.Render
 {
   static class DiceRenderer
   {

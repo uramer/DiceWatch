@@ -9,6 +9,9 @@ D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\bin\Xamarin.Forms.Xam
 D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\Dice.deps.json
 D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\Add.png
 D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\Alarms_on_call.ogg
+D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\Back.png
+D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\Clear.png
+D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\ClearMenu.png
 D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\dice\D12-1.png
 D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\dice\D12-10.png
 D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\dice\D12-11.png
@@ -39,7 +42,13 @@ D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\dice\D8-5.png
 D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\dice\D8-6.png
 D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\dice\D8-7.png
 D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\dice\D8-8.png
+D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\Discard.png
+D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\New.png
+D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\Page.png
+D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\PageNew.png
+D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\PageOpen.png
+D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\Roll.png
 D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\shared\res\Dice.png
 D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\tizen-manifest.xml
 D:\programming\watch-dice\Dice\bin\Release\tizen40\tpkroot\res\tizen-circular-ui-theme.edj
-D:\programming\watch-dice\Dice\bin\Release\tizen40\com.example.Dice-1.0.0.tpk
+D:\programming\watch-dice\Dice\bin\Release\tizen40\urm.dice-1.0.0.tpk

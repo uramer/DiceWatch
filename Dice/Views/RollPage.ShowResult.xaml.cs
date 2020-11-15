@@ -1,4 +1,5 @@
 ﻿using Dice.Dice;
+using Dice.Render;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,13 +16,11 @@ namespace Dice.Views
     }
 
     private Dictionary<D, EventHandler> removeHandlers;
-    private void RemoveHandlers()
+    private void PrepareRemoveHandlers()
     {
-      removeHandlers = new Dictionary<D, EventHandler> {
-        { D.D4, (object sender, EventArgs e) => Remove(D.D4) },
-        { D.D6, (object sender, EventArgs e) => Remove(D.D6) },
-        { D.D8, (object sender, EventArgs e) => Remove(D.D8) },
-        { D.D12, (object sender, EventArgs e) => Remove(D.D12) }
+      removeHandlers = new Dictionary<D, EventHandler>();
+      foreach(D type in DiceType.Types) {
+        removeHandlers.Add(type, (object sender, EventArgs e) => Remove(type));
       };
     }
 
@@ -30,18 +29,19 @@ namespace Dice.Views
       return (int)Math.Max(1, Math.Ceiling(Math.Sqrt(count)));
     }
 
+    private const double padding = 0.1;
+
     private double DieSize(int count)
     {
       double size = Width;
       double rowSize = RowSize(count); // align dice in a square
       size *= 0.75; // padding on the sides
       size /= rowSize; // fix multiple dice in a row
-      size /= 1.1; // leave 10% for spacing;
+      size /= 1 + padding; // account for padding
       if (size < 8) size = 8; // too small to read
       if (size > 128) size = 128; // images are 128 px, don't scale them up
       return size;
     }
-
 
     private void RenderResult(DiceResult result)
     {
@@ -50,10 +50,10 @@ namespace Dice.Views
 
       var view = new Grid
       {
-        HorizontalOptions = LayoutOptions.Center,
-        VerticalOptions = LayoutOptions.Start,
-        RowSpacing = 5,
-        ColumnSpacing = 5
+        HorizontalOptions = LayoutOptions.CenterAndExpand,
+        VerticalOptions = LayoutOptions.FillAndExpand,
+        RowSpacing = 3,
+        ColumnSpacing = 3
       };
 
       for(int i = 0; i < rowSize; i++)

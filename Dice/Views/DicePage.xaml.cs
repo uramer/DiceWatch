@@ -34,19 +34,14 @@ namespace Dice.Views
     private Dictionary<D, EventHandler> addHandlers;
     private void AddHandlers()
     {
-      addHandlers = new Dictionary<D, EventHandler> {
-        { D.D4, (object sender, EventArgs e) => Add(D.D4, sender as View) },
-        { D.D6, (object sender, EventArgs e) => Add(D.D6, sender as View) },
-        { D.D8, (object sender, EventArgs e) => Add(D.D8, sender as View) },
-        { D.D12, (object sender, EventArgs e) => Add(D.D12, sender as View) }
-      };
+      addHandlers = new Dictionary<D, EventHandler>();
+      foreach (D type in DiceType.Types) {
+        addHandlers.Add(type, (object sender, EventArgs e) => Add(type, sender as View));
+      }
     }
     private void RenderDiceButtons()
     {
-      var types = new List<D> {
-        D.D4, D.D6, D.D8, D.D12
-      };
-      foreach (var type in types)
+      foreach (D type in DiceType.Types)
       {
         var die = DiceType.get(type);
         var dieItem = new ImageButton();

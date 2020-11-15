@@ -2,8 +2,12 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>tizen50</TargetFramework>
+    <TargetFramework>tizen40</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\__RollPage.Voice.xaml.bak" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Resources\AppResources.Designer.cs">
@@ -11,10 +15,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Update="Views\ClearPage.xaml.cs">
+      <DependentUpon>ClearPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\NewPage.xaml.cs">
+      <DependentUpon>NewPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\DicePage.xaml.cs">
       <DependentUpon>DicePage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\RollPage.Voice.xaml.cs">
+    <Compile Update="Views\RollPage.Storage.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\RollPage.Paging.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
     <Compile Update="Views\RollPage.ShowResult.xaml.cs">
@@ -37,9 +50,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8" />
-    <PackageReference Include="Tizen.Wearable.CircularUI" Version="1.5.0" />
-    <PackageReference Include="Xamarin.Forms" Version="4.7.0.968" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Tizen.Wearable.CircularUI" Version="1.5.2" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1687" />
   </ItemGroup>
 
 </Project>

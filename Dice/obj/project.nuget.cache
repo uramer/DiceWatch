@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "8gSFk2Orgy5nJHFtQjm6w0uQI9vxm1p5OcQ90OLyuTMiajDwWEa9nF3dlc+aKOG4J5UNwSso70FNkpi0f1pHHg==",
+  "dgSpecHash": "U0eUBlqy4yndnfVEaVoh3Mi7mTx6lt/SH5sD1lKcgwGd2jnP/HkKWBmH5ujYGyBsl9vhq/386PoAUizvMHGyKg==",
   "success": true,
   "projectFilePath": "D:\\programming\\watch-dice\\Dice\\Dice.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.codeanalysis.fxcopanalyzers\\2.9.8\\microsoft.codeanalysis.fxcopanalyzers.2.9.8.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.codeanalysis.versioncheckanalyzer\\2.9.8\\microsoft.codeanalysis.versioncheckanalyzer.2.9.8.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.codequality.analyzers\\2.9.8\\microsoft.codequality.analyzers.2.9.8.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.netcore.analyzers\\2.9.8\\microsoft.netcore.analyzers.2.9.8.nupkg.sha512",
+    "C:\\Users\\anton\\.nuget\\packages\\microsoft.codeanalysis.fxcopanalyzers\\3.3.1\\microsoft.codeanalysis.fxcopanalyzers.3.3.1.nupkg.sha512",
+    "C:\\Users\\anton\\.nuget\\packages\\microsoft.codeanalysis.versioncheckanalyzer\\3.3.1\\microsoft.codeanalysis.versioncheckanalyzer.3.3.1.nupkg.sha512",
+    "C:\\Users\\anton\\.nuget\\packages\\microsoft.codequality.analyzers\\3.3.1\\microsoft.codequality.analyzers.3.3.1.nupkg.sha512",
+    "C:\\Users\\anton\\.nuget\\packages\\microsoft.netcore.analyzers\\3.3.1\\microsoft.netcore.analyzers.3.3.1.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.netframework.analyzers\\2.9.8\\microsoft.netframework.analyzers.2.9.8.nupkg.sha512",
+    "C:\\Users\\anton\\.nuget\\packages\\microsoft.netframework.analyzers\\3.3.1\\microsoft.netframework.analyzers.3.3.1.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\tizen.net\\6.0.0.14995\\tizen.net.6.0.0.14995.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\tizen.net.api5\\5.0.0.14638\\tizen.net.api5.5.0.0.14638.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\tizen.wearable.circularui\\1.5.0\\tizen.wearable.circularui.1.5.0.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\xamarin.forms\\4.7.0.968\\xamarin.forms.4.7.0.968.nupkg.sha512"
+    "C:\\Users\\anton\\.nuget\\packages\\tizen.net.api4\\4.0.1.14164\\tizen.net.api4.4.0.1.14164.nupkg.sha512",
+    "C:\\Users\\anton\\.nuget\\packages\\tizen.wearable.circularui\\1.5.2\\tizen.wearable.circularui.1.5.2.nupkg.sha512",
+    "C:\\Users\\anton\\.nuget\\packages\\xamarin.forms\\4.8.0.1687\\xamarin.forms.4.8.0.1687.nupkg.sha512"
   ],
   "logs": []
 }

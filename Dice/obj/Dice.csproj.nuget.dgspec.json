@@ -18,14 +18,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "tizen50"
+          "tizen40"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "tizen50": {
+          "tizen40": {
             "projectReferences": {}
           }
         },
@@ -36,11 +36,13 @@
         }
       },
       "frameworks": {
-        "tizen50": {
+        "tizen40": {
           "dependencies": {
             "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.9.8, )"
+              "version": "[3.3.1, )"
             },
             "Tizen.NET": {
               "suppressParent": "All",
@@ -50,11 +52,11 @@
             },
             "Tizen.Wearable.CircularUI": {
               "target": "Package",
-              "version": "[1.5.0, )"
+              "version": "[1.5.2, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.7.0.968, )"
+              "version": "[4.8.0.1687, )"
             }
           },
           "imports": [

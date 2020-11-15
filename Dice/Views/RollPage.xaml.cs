@@ -1,43 +1,33 @@
-﻿using Dice.Dice;
+﻿using Dice.Services;
 using System;
-using Tizen.Wearable.CircularUI.Forms;
 using Xamarin.Forms;
 
 namespace Dice.Views
 {
   public partial class RollPage : ContentPage
   {
-    private DiceSet set = new DiceSet();
-
+    private App app;
     public RollPage()
     {
+      app = (App)Application.Current;
+
       InitializeComponent();
 
-      RemoveHandlers();
+      PreparePaging();
+      app.Loaded += Loaded;
 
-      Clear();
+      PrepareRemoveHandlers();
+    }
+
+    private void Loaded(object sender = null, EventArgs e = null)
+    {
+      SwitchPage(0);
     }
 
     protected override void OnAppearing()
     {
+      base.OnAppearing();
       UpdateDefault();
-      UpdateChildrenLayout();
-      EnableVoice();
-    }
-
-    protected override void OnDisappearing()
-    {
-      base.OnDisappearing();
-      DisableVoice();
-    }
-
-    private void RegisterSwipes()
-    {
-      /*mainScroll.GestureRecognizers.Add(new SwipeGestureRecognizer
-      {
-        Direction = SwipeDirection.Down,
-        Command =
-      });*/
     }
 
     private void UpdateRoll()
@@ -50,20 +40,24 @@ namespace Dice.Views
       RenderResult(set.Default());
     }
 
-    private void Clear()
+    public void Clear()
     {
       set.Clear();
       UpdateDefault();
     }
 
-    private void Roll_Click(object sender, EventArgs e)
+    public void Discard()
     {
-      UpdateRoll();
+      provider.Discard(page);
+      if (provider.Count() == 0)
+        ShowPage(0);
+      else
+        PrevPage();
     }
 
     private void Clear_Click(object sender, EventArgs e)
     {
-      Clear();
+      Navigation.PushAsync(new ClearPage(this));
     }
 
     private void Add_Click(object sender, EventArgs e)
@@ -71,9 +65,9 @@ namespace Dice.Views
       Navigation.PushAsync(new DicePage(set));
     }
 
-    public void OnRotated(object sender, RotaryEventArgs args)
+    private void Roll_Click(object sender, EventArgs e)
     {
-      
+      UpdateRoll();
     }
   }
 }

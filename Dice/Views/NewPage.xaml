@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Dice.Views.NewPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:c="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+    xmlns:res="clr-namespace:Dice.Resources"
+    BackgroundColor="Gray">
+  <ContentPage.Content>
+    <c:CircleStackLayout
+      HorizontalOptions="CenterAndExpand"
+      VerticalOptions="CenterAndExpand"
+    >
+      <ImageButton
+        Source="New.png"
+        Clicked="New"
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="CenterAndExpand"
+      />
+    </c:CircleStackLayout>
+  </ContentPage.Content>
+</ContentPage>

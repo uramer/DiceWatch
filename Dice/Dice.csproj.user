@@ -4,6 +4,12 @@
     <ActiveDebugProfile>Dice</ActiveDebugProfile>
   </PropertyGroup>
   <ItemGroup>
+    <EmbeddedResource Update="Views\ClearPage.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\NewPage.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\DicePage.xaml">
       <SubType>Designer</SubType>
     </EmbeddedResource>

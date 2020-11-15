@@ -38,6 +38,8 @@ namespace Dice.Dice
     {
       return diceTypes[type];
     }
+
+    public static readonly D[] Types = new D[] { D.D4, D.D6, D.D8, D.D12};
   }
 
   public enum D
