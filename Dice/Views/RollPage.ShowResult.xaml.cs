@@ -29,20 +29,6 @@ namespace Dice.Views
       return (int)Math.Max(1, Math.Ceiling(Math.Sqrt(count)));
     }
 
-    private const double padding = 0.1;
-
-    private double DieSize(int count)
-    {
-      double size = Width;
-      double rowSize = RowSize(count); // align dice in a square
-      size *= 0.75; // padding on the sides
-      size /= rowSize; // fix multiple dice in a row
-      size /= 1 + padding; // account for padding
-      if (size < 8) size = 8; // too small to read
-      if (size > 128) size = 128; // images are 128 px, don't scale them up
-      return size;
-    }
-
     private void RenderResult(DiceResult result)
     {
       int totalCount = result.rolls.Values.Sum(r => r.Count);

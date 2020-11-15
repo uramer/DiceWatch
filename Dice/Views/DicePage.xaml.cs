@@ -1,4 +1,5 @@
 ﻿using Dice.Dice;
+using Dice.Render;
 using System;
 using System.Collections.Generic;
 using Tizen.System;

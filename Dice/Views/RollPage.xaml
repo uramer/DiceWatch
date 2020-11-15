@@ -9,7 +9,12 @@
   >
   <Grid>
     <Grid.RowDefinitions>
-      <RowDefinition />
+      <RowDefinition Height="1*"/>
+      <RowDefinition Height="12*"/>
+      <RowDefinition Height="5*"/>
+      <RowDefinition Height="76*"/>
+      <RowDefinition Height="5*"/>
+      <RowDefinition Height="1*"/>
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="1*"/>
@@ -22,60 +27,45 @@
     <ImageButton
       Grid.Row="0"
       Grid.Column="1"
+      Grid.RowSpan="6"
       VerticalOptions="Center"
       Clicked="Roll_Click"
       Source="Roll.png"
     />
 
-    <Grid
-      Grid.Row="0"
+    <ImageButton
+      Grid.Row="1"
       Grid.Column="2"
+      x:Name="addButton"
       HorizontalOptions="Center"
-      VerticalOptions="Fill"
-    >
-      <Grid.RowDefinitions>
-        <RowDefinition Height="1*"/>
-        <RowDefinition Height="12*"/>
-        <RowDefinition Height="5*"/>
-        <RowDefinition Height="76*"/>
-        <RowDefinition Height="5*"/>
-        <RowDefinition Height="1*"/>
-      </Grid.RowDefinitions>
-      <Grid.ColumnDefinitions>
-        <ColumnDefinition />
-      </Grid.ColumnDefinitions>
-
-      <ImageButton
-        Grid.Row="1"
-        Grid.Column="0"
-        x:Name="addButton"
-        HorizontalOptions="Center"
-        Clicked="Add_Click"
-        Source="Add.png"
-      />
-      <Label
-        Grid.Row="2"
-        Grid.Column="0"
-        HorizontalOptions="Center"
-        x:Name="totalLabel"
-      />
-      <ScrollView
-        Grid.Row="3"
-        Grid.Column="0"
-        x:Name="rollResult"
-        HorizontalOptions="FillAndExpand"
-      />
-      <ContentView
-        Grid.Row="4"
-        Grid.Column="0"
-        x:Name="pageBar"
-        HorizontalOptions="Fill"
-      />
-    </Grid>
+      Clicked="Add_Click"
+      Source="Add.png"
+    />
+    <Label
+      Grid.Row="2"
+      Grid.Column="2"
+      FontSize="7"
+      HorizontalOptions="Center"
+      x:Name="totalLabel"
+      Padding="0,0"
+    />
+    <ScrollView
+      Grid.Row="3"
+      Grid.Column="2"
+      x:Name="rollResult"
+      HorizontalOptions="FillAndExpand"
+    />
+    <ContentView
+      Grid.Row="4"
+      Grid.Column="2"
+      x:Name="pageBar"
+      HorizontalOptions="Fill"
+    />
 
     <ImageButton
       Grid.Row="0"
       Grid.Column="3"
+      Grid.RowSpan="6"
       VerticalOptions="Center"
       Clicked="Clear_Click"
       Source="ClearMenu.png"

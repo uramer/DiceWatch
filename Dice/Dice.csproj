@@ -24,9 +24,6 @@
     <Compile Update="Views\DicePage.xaml.cs">
       <DependentUpon>DicePage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\RollPage.Storage.xaml.cs">
-      <DependentUpon>%(Filename)</DependentUpon>
-    </Compile>
     <Compile Update="Views\RollPage.Paging.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
