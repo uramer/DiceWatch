@@ -9,19 +9,19 @@
   >
   <Grid>
     <Grid.RowDefinitions>
-      <RowDefinition Height="1*"/>
-      <RowDefinition Height="12*"/>
+      <RowDefinition Height="2*"/>
+      <RowDefinition Height="10*"/>
       <RowDefinition Height="5*"/>
       <RowDefinition Height="76*"/>
+      <RowDefinition Height="2*"/>
       <RowDefinition Height="5*"/>
-      <RowDefinition Height="1*"/>
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="1*"/>
+      <ColumnDefinition Width="2*"/>
       <ColumnDefinition Width="12*"/>
       <ColumnDefinition Width="74*"/>
-      <ColumnDefinition Width="12*"/>
-      <ColumnDefinition Width="1*"/>
+      <ColumnDefinition Width="10*"/>
+      <ColumnDefinition Width="2*"/>
     </Grid.ColumnDefinitions>
 
     <ImageButton
@@ -56,12 +56,26 @@
       HorizontalOptions="Fill"
       VerticalOptions="Fill"
     />
-    <ContentView
+
+    <Grid
       Grid.Row="4"
       Grid.Column="2"
-      x:Name="pageBar"
-      HorizontalOptions="Fill"
-    />
+    >
+      <Grid.RowDefinitions>
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="21*" />
+        <ColumnDefinition Width="58*" />
+        <ColumnDefinition Width="21*" />
+      </Grid.ColumnDefinitions>
+      
+      <ContentView
+        Grid.Row="0"
+        Grid.Column="1"
+        x:Name="pageBar"
+      />
+    </Grid>
 
     <ImageButton
       Grid.Row="0"

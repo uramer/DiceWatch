@@ -46,7 +46,7 @@ namespace Dice.Views
       for(int i = 0; i < rowSize; i++)
       {
         view.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
-        view.ColumnDefinitions.Add(new ColumnDefinition { Width = GridLength.Auto });
+        view.ColumnDefinitions.Add(new ColumnDefinition { Width = GridLength.Star });
       }
 
       int row = 0;
