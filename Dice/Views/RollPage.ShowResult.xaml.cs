@@ -36,16 +36,17 @@ namespace Dice.Views
 
       var view = new Grid
       {
-        HorizontalOptions = LayoutOptions.CenterAndExpand,
-        VerticalOptions = LayoutOptions.FillAndExpand,
+        HorizontalOptions = LayoutOptions.Fill,
         RowSpacing = 3,
         ColumnSpacing = 3
       };
+      view.BindingContext = rollResult;
+      view.SetBinding(WidthProperty, "Width");
 
       for(int i = 0; i < rowSize; i++)
       {
-        view.RowDefinitions.Add(new RowDefinition());
-        view.ColumnDefinitions.Add(new ColumnDefinition());
+        view.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+        view.ColumnDefinitions.Add(new ColumnDefinition { Width = GridLength.Auto });
       }
 
       int row = 0;

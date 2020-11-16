@@ -7,8 +7,10 @@ namespace Dice.Views
   public partial class RollPage : ContentPage
   {
     private App app;
+    private bool appeared;
     public RollPage()
     {
+      appeared = false;
       app = (App)Application.Current;
 
       InitializeComponent();
@@ -27,7 +29,14 @@ namespace Dice.Views
     protected override void OnAppearing()
     {
       base.OnAppearing();
+      appeared = true;
       UpdateDefault();
+    }
+
+    protected override void OnDisappearing()
+    {
+      base.OnAppearing();
+      appeared = false;
     }
 
     private void UpdateRoll()

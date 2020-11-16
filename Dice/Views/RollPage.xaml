@@ -53,7 +53,8 @@
       Grid.Row="3"
       Grid.Column="2"
       x:Name="rollResult"
-      HorizontalOptions="FillAndExpand"
+      HorizontalOptions="Fill"
+      VerticalOptions="Fill"
     />
     <ContentView
       Grid.Row="4"

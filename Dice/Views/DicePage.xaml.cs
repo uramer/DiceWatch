@@ -40,17 +40,28 @@ namespace Dice.Views
         addHandlers.Add(type, (object sender, EventArgs e) => Add(type, sender as View));
       }
     }
+
+    private const int startRow = 1;
+    private const int startColumn = 1;
+    private const int rowSize = 3;
     private void RenderDiceButtons()
     {
+      int row = startRow;
+      int column = startColumn;
       foreach (D type in DiceType.Types)
       {
         var die = DiceType.get(type);
         var dieItem = new ImageButton();
         dieItem.Source = DiceRenderer.Image(type, die.max);
         dieItem.Clicked += addHandlers[type];
-        dieItem.Margin = new Thickness(5);
 
-        diceList.Children.Add(dieItem);
+        diceGrid.Children.Add(dieItem, column, row);
+        column++;
+        if(column == startColumn + rowSize)
+        {
+          column = startColumn;
+          row++;
+        }
       }
     }
 

@@ -11,12 +11,15 @@ namespace Dice.Render
       { D.D4, "D4" },
       { D.D6, "D6" },
       { D.D8, "D8" },
-      { D.D12, "D12" }
+      { D.D12, "D12" },
+      { D.D20, "D20" },
+      { D.D10, "D10" }
     };
 
     private static string MakePath(D type, int value)
     {
-      return $"dice/{names[type]}-{value}.png";
+      var die = DiceType.get(type);
+      return $"dice/{names[type]}-{value - die.min + 1}.png";
     }
 
     public static string Text(D type)

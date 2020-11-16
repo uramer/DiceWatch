@@ -7,12 +7,26 @@
     xmlns:res="clr-namespace:Dice.Resources"
     BackgroundColor="Gray">
   <ContentPage.Content>
-    <c:CircleStackLayout>
-      <ImageButton
-        Source="Back.png"
-        Clicked="Back"
-      />
-      <FlexLayout x:Name="diceList" HorizontalOptions="Center" VerticalOptions="Center" />
-    </c:CircleStackLayout>
+    <Grid
+        x:Name="diceGrid"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        RowSpacing="3"
+        ColumnSpacing="3"
+      >
+      <Grid.RowDefinitions>
+        <RowDefinition Height="20*"/>
+        <RowDefinition Height="50*"/>
+        <RowDefinition Height="50*"/>
+        <RowDefinition Height="20*"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="21*"/>
+        <ColumnDefinition Width="33*"/>
+        <ColumnDefinition Width="33*"/>
+        <ColumnDefinition Width="33*"/>
+        <ColumnDefinition Width="21*"/>
+      </Grid.ColumnDefinitions>
+    </Grid>
   </ContentPage.Content>
 </ContentPage>

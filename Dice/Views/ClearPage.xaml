@@ -7,45 +7,18 @@
     xmlns:res="clr-namespace:Dice.Resources"
     BackgroundColor="Gray">
   <ContentPage.Content>
-    <Grid
-      HorizontalOptions="Center"
-      VerticalOptions="Center"
+    <c:CircleListView
+      x:Name="menuList"
+      ItemTapped="MenuListTapped"
     >
-      <Grid.RowDefinitions>
-        <RowDefinition />
-        <RowDefinition />
-      </Grid.RowDefinitions>
-      <Grid.ColumnDefinitions>
-        <ColumnDefinition />
-        <ColumnDefinition />
-      </Grid.ColumnDefinitions>
-
-      <ImageButton
-        Grid.Row="0"
-        Grid.Column="0"
-        Source="Clear.png"
-        Clicked="Clear_Click"
-      />
-      <Label
-        Grid.Row="0"
-        Grid.Column="1"
-        VerticalTextAlignment="Center"
-        Text="Clear"
-      />
-      
-      <ImageButton
-        Grid.Row="1"
-        Grid.Column="0"
-        HorizontalOptions="StartAndExpand"
-        Source="Discard.png"
-        Clicked="Discard_Click"
-      />
-      <Label
-        Grid.Row="1"
-        Grid.Column="1"
-        VerticalTextAlignment="Center"
-        Text="Discard"
-      />
-    </Grid>
+      <c:CircleListView.ItemTemplate>
+        <DataTemplate>
+          <ImageCell
+            ImageSource="{Binding Image}"
+            Text="{Binding Text}"
+          />
+        </DataTemplate>
+      </c:CircleListView.ItemTemplate>
+    </c:CircleListView>
   </ContentPage.Content>
 </ContentPage>

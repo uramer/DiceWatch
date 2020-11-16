@@ -54,6 +54,7 @@ namespace Dice.Views
 
     void OnRotated(object sender, RotaryEventArgs args)
     {
+      if (!appeared) return;
       if (args.IsClockwise)
         NextPage();
       else

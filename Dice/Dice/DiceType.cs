@@ -25,13 +25,17 @@ namespace Dice.Dice
     public static DiceType D6 = new DiceType(1, 6);
     public static DiceType D8 = new DiceType(1, 8);
     public static DiceType D12 = new DiceType(1, 12);
+    public static DiceType D20 = new DiceType(1, 20);
+    public static DiceType D10 = new DiceType(0, 9);
 
     private static Dictionary<D, DiceType> diceTypes = new Dictionary<D, DiceType>
     {
       { D.D4, D4 },
       { D.D6, D6 },
       { D.D8, D8 },
-      { D.D12, D12 }
+      { D.D12, D12 },
+      { D.D20, D20 },
+      { D.D10, D10 },
     };
 
     public static DiceType get(D type)
@@ -39,11 +43,11 @@ namespace Dice.Dice
       return diceTypes[type];
     }
 
-    public static readonly D[] Types = new D[] { D.D4, D.D6, D.D8, D.D12};
+    public static readonly D[] Types = new D[] { D.D4, D.D6, D.D8, D.D12, D.D20, D.D10 };
   }
 
   public enum D
   {
-    D4, D6, D8, D12
+    D4, D6, D8, D12, D20, D10
   }
 }
