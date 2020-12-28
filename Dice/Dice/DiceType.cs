@@ -18,7 +18,7 @@ namespace Dice.Dice
 
     public int Roll()
     {
-      return _random.Next(min, max);
+      return _random.Next(min, max + 1);
     }
 
     public static DiceType D4 = new DiceType(1, 4);
