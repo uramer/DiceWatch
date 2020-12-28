@@ -6,7 +6,7 @@ namespace Dice.Dice
   public class DiceResult
   {
     public SortedDictionary<D, IList<int>> rolls = new SortedDictionary<D, IList<int>>();
-    public int? total = null;
+    public int? total;
 
   }
 

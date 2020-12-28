@@ -55,7 +55,7 @@ namespace Dice.Services
       initialized = true;
     }
 
-    private byte[] Serialize(IList<DiceSet> sets)
+    private static byte[] Serialize(IList<DiceSet> sets)
     {
       var bytes = new List<byte>();
       foreach(var set in sets)
@@ -84,19 +84,19 @@ namespace Dice.Services
     {
       if (!initialized) throw new IOException("Storage is not initialized!");
       Log($"Writing {bytes.Length} bytes!");
-      await File.WriteAllBytesAsync(path, bytes);
+      await File.WriteAllBytesAsync(path, bytes).ConfigureAwait(false);
     }
 
     private async Task<byte[]> Read()
     {
       if (!initialized) throw new IOException("Storage is not initialized!");
-      return await File.ReadAllBytesAsync(path);
+      return await File.ReadAllBytesAsync(path).ConfigureAwait(false);
     }
 
     public async Task WriteSets(IList<DiceSet> sets)
     {
       Log($"Saving {sets.Count} sets!");
-      await Write(Serialize(sets));
+      await Write(Serialize(sets)).ConfigureAwait(false);
     }
 
     public async Task<IList<DiceSet>> ReadSets()

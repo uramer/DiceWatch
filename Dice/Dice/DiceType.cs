@@ -21,12 +21,12 @@ namespace Dice.Dice
       return _random.Next(min, max + 1);
     }
 
-    public static DiceType D4 = new DiceType(1, 4);
-    public static DiceType D6 = new DiceType(1, 6);
-    public static DiceType D8 = new DiceType(1, 8);
-    public static DiceType D12 = new DiceType(1, 12);
-    public static DiceType D20 = new DiceType(1, 20);
-    public static DiceType D10 = new DiceType(0, 9);
+    public static readonly DiceType D4 = new DiceType(1, 4);
+    public static readonly DiceType D6 = new DiceType(1, 6);
+    public static readonly DiceType D8 = new DiceType(1, 8);
+    public static readonly DiceType D12 = new DiceType(1, 12);
+    public static readonly DiceType D20 = new DiceType(1, 20);
+    public static readonly DiceType D10 = new DiceType(0, 9);
 
     private static Dictionary<D, DiceType> diceTypes = new Dictionary<D, DiceType>
     {

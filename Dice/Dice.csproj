@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>tizen40</TargetFramework>
+    <NoWarn>CA1051,CA1805,CA1712</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
