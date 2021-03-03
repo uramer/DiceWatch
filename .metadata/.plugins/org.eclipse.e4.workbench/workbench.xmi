@@ -9,11 +9,53 @@
     <persistedState key="isRestored" value="true"/>
     <persistedState key="show_in_time" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;show_in_time/>"/>
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
-    <persistedState key="aggregateWorkingSetId"/>
+    <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1614788174027"/>
     <tags>topLevel</tags>
     <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_aHkQkiXyEeuEMI39je5SfA" selectedElement="_aHkQkyXyEeuEMI39je5SfA" horizontal="true">
-      <children xsi:type="advanced:PerspectiveStack" xmi:id="_aHkQkyXyEeuEMI39je5SfA" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500"/>
+      <children xsi:type="advanced:PerspectiveStack" xmi:id="_aHkQkyXyEeuEMI39je5SfA" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_xQDJ0Hw7EeuUtYVE_EOHEA">
+        <children xsi:type="advanced:Perspective" xmi:id="_xQDJ0Hw7EeuUtYVE_EOHEA" elementId="org.tizen.web.ui.perspective.WebWidget" selectedElement="_xQDJ0Xw7EeuUtYVE_EOHEA" label="Web" iconURI="platform:/plugin/org.tizen.web.project/icons/perspective26/perspective_web.png">
+          <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.hideToolbarSC:org.eclipse.tm.terminal.view.ui.commands.launchToolbar,persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,"/>
+          <tags>persp.actionSet:org.eclipse.ui.cheatsheets.actionSet</tags>
+          <tags>persp.actionSet:org.eclipse.search.searchActionSet</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.annotationNavigation</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.navigation</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo</tags>
+          <tags>persp.actionSet:org.eclipse.ui.externaltools.ExternalToolsSet</tags>
+          <tags>persp.actionSet:org.eclipse.ui.actionSet.keyBindings</tags>
+          <tags>persp.actionSet:org.eclipse.ui.actionSet.openFiles</tags>
+          <tags>persp.viewSC:org.eclipse.ui.console.ConsoleView</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.PropertySheet</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.ContentOutline</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.ProblemView</tags>
+          <tags>persp.viewSC:org.tizen.common.connection.explorer.ConnectionExplorer</tags>
+          <tags>persp.viewSC:org.tizen.common.rest.ui.views.RestViewer</tags>
+          <tags>persp.newWizSC:org.tizen.common.ui.tizenprojectwizard</tags>
+          <tags>persp.actionSet:org.eclipse.debug.ui.launchActionSet</tags>
+          <tags>persp.actionSet:org.eclipse.debug.ui.profileActionSet</tags>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_xQDJ0Xw7EeuUtYVE_EOHEA" selectedElement="_xQDJ0nw7EeuUtYVE_EOHEA" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_xQDJ0nw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.navigator.ProjectExplorerMStack" containerData="1650" selectedElement="_xQDJ03w7EeuUtYVE_EOHEA">
+              <tags>active</tags>
+              <children xsi:type="advanced:Placeholder" xmi:id="_xQDJ03w7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_xP-RUHw7EeuUtYVE_EOHEA"/>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_xQDJ1Hw7EeuUtYVE_EOHEA" containerData="8350" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_xQDJ1Xw7EeuUtYVE_EOHEA" containerData="8100">
+                <children xsi:type="advanced:Placeholder" xmi:id="_xQDJ1nw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_xP2VgHw7EeuUtYVE_EOHEA"/>
+                <children xsi:type="basic:PartStack" xmi:id="_xQDJ13w7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.views.ProblemViewMStack" containerData="2500" selectedElement="_xQDJ2Hw7EeuUtYVE_EOHEA">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_xQDJ2Hw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.views.ProblemView" ref="_xQB7sXw7EeuUtYVE_EOHEA"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_xQDJ2Xw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.console.ConsoleView" ref="_xQCiwHw7EeuUtYVE_EOHEA"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_xQDJ2nw7EeuUtYVE_EOHEA" elementId="org.tizen.common.connection.log.LogView" ref="_xQCiwXw7EeuUtYVE_EOHEA"/>
+                </children>
+              </children>
+              <children xsi:type="basic:PartStack" xmi:id="_xQDJ23w7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.views.ContentOutlineMStack" containerData="1900" selectedElement="_xQDJ3Hw7EeuUtYVE_EOHEA">
+                <children xsi:type="advanced:Placeholder" xmi:id="_xQDJ3Hw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.views.ContentOutline" ref="_xQBUoHw7EeuUtYVE_EOHEA"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_xQDJ3Xw7EeuUtYVE_EOHEA" elementId="org.tizen.common.lv.view" ref="_xQBUoXw7EeuUtYVE_EOHEA"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_xQDJ3nw7EeuUtYVE_EOHEA" elementId="org.tizen.web.unittest.views.resultView" ref="_xQB7sHw7EeuUtYVE_EOHEA"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </children>
       <children xsi:type="basic:PartStack" xmi:id="_aHkQlCXyEeuEMI39je5SfA" elementId="stickyFolderRight" toBeRendered="false" containerData="2500">
         <children xsi:type="advanced:Placeholder" xmi:id="_aHkQlSXyEeuEMI39je5SfA" elementId="org.eclipse.help.ui.HelpView" toBeRendered="false" ref="_aHjpgCXyEeuEMI39je5SfA"/>
         <children xsi:type="advanced:Placeholder" xmi:id="_aHkQliXyEeuEMI39je5SfA" elementId="org.eclipse.ui.internal.introview" toBeRendered="false" ref="_aHkQkCXyEeuEMI39je5SfA"/>
@@ -38,6 +80,74 @@
       <tags>View</tags>
       <tags>categoryTag:Help</tags>
     </sharedElements>
+    <sharedElements xsi:type="advanced:Area" xmi:id="_xP2VgHw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.editorss">
+      <children xsi:type="basic:PartStack" xmi:id="_xP2VgXw7EeuUtYVE_EOHEA" elementId="org.eclipse.e4.primaryDataStack">
+        <tags>org.eclipse.e4.primaryDataStack</tags>
+        <tags>EditorStack</tags>
+      </children>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_xP-RUHw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.navigator.ProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Project Explorer" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources/icons/full/eview20/resource_persp.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.navigator.resources"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.navigator.resources.ProjectExplorer"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; org.eclipse.cdt.ui.cview.groupincludes=&quot;false&quot; org.eclipse.cdt.ui.cview.groupmacros=&quot;false&quot; org.eclipse.cdt.ui.editor.CUChildren=&quot;true&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
+      <tags>View</tags>
+      <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
+      <menus xmi:id="_xV56MHw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.navigator.ProjectExplorer">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_xV56MXw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.navigator.ProjectExplorer"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_xQBUoHw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.views.ContentOutline" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Outline" iconURI="platform:/plugin/org.eclipse.ui.views/icons/full/eview20/outline_co.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.views"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.views.contentoutline.ContentOutline"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:General</tags>
+      <menus xmi:id="_xmmooHw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.views.ContentOutline">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_xmmooXw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.views.ContentOutline"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_xQBUoXw7EeuUtYVE_EOHEA" elementId="org.tizen.common.lv.view" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Web Localization" iconURI="platform:/plugin/org.tizen.common.lv/icons/eview20/view_wl.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.tizen.common.lv"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.tizen.common.lv.ui.LocalizationView"/>
+      <tags>View</tags>
+      <tags>categoryTag:Tizen</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_xQB7sHw7EeuUtYVE_EOHEA" elementId="org.tizen.web.unittest.views.resultView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Web Unit Test Result" iconURI="platform:/plugin/org.tizen.web.unittest/icons/eview20/view_wutr.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="org.tizen.web.unittest.resultview.ui.WUTResultView"/>
+      <persistedState key="originalCompatibilityViewBundle" value="org.tizen.web.unittest"/>
+      <tags>View</tags>
+      <tags>categoryTag:Tizen</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_xQB7sXw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.views.ProblemView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Problems" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview20/problems_view.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.ide"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.views.markers.ProblemsView"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;90&quot; org.eclipse.ui.ide.markerType=&quot;90&quot; org.eclipse.ui.ide.pathField=&quot;120&quot; org.eclipse.ui.ide.resourceField=&quot;90&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;300&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
+      <tags>View</tags>
+      <tags>categoryTag:General</tags>
+      <menus xmi:id="_xjPLkHw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.views.ProblemView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_xjPyoHw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.views.ProblemView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_xQCiwHw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.console.ConsoleView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Console" iconURI="platform:/plugin/org.eclipse.ui.console/icons/full/cview20/console_view.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.console"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.console.ConsoleView"/>
+      <tags>View</tags>
+      <tags>categoryTag:General</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_xQCiwXw7EeuUtYVE_EOHEA" elementId="org.tizen.common.connection.log.LogView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Log" iconURI="platform:/plugin/org.tizen.common.connection/icons/log/view_icon_log.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.tizen.common.connection"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.tizen.common.connection.logview.view.LogView"/>
+      <tags>View</tags>
+      <tags>categoryTag:Tizen</tags>
+    </sharedElements>
     <trimBars xmi:id="_ZxYlMiXyEeuEMI39je5SfA" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.ui.workbench">
       <children xsi:type="menu:ToolBar" xmi:id="_aIalICXyEeuEMI39je5SfA" elementId="group.file" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -45,11 +155,14 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_aIbMMCXyEeuEMI39je5SfA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_aIe2kCXyEeuEMI39je5SfA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_ZymtXSXyEeuEMI39je5SfA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_xMkYA3w7EeuUtYVE_EOHEA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_ZymtXSXyEeuEMI39je5SfA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_aIbMMSXyEeuEMI39je5SfA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_aIbMMiXyEeuEMI39je5SfA" elementId="additions" toBeRendered="false"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_xTuv8Hw7EeuUtYVE_EOHEA" elementId="org.eclipse.search.searchActionSet" visible="false">
+        <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_aIbMMyXyEeuEMI39je5SfA" elementId="group.nav" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -57,7 +170,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_aIbzQCXyEeuEMI39je5SfA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_aIfdoCXyEeuEMI39je5SfA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_ZylfLSXyEeuEMI39je5SfA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_xMk_GHw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_ZylfLSXyEeuEMI39je5SfA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_aIbzQSXyEeuEMI39je5SfA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -166,6 +279,25 @@
     <bindings xmi:id="_ZzAV1yXyEeuEMI39je5SfA" keySequence="ALT+CTRL+ARROW_UP" command="_ZynUziXyEeuEMI39je5SfA"/>
     <bindings xmi:id="_ZzAV2CXyEeuEMI39je5SfA" keySequence="ALT+CTRL+ARROW_DOWN" command="_ZynUvSXyEeuEMI39je5SfA"/>
     <bindings xmi:id="_ZzAV2iXyEeuEMI39je5SfA" keySequence="CTRL+F10" command="_ZymtYyXyEeuEMI39je5SfA"/>
+    <bindings xmi:id="_wuEeIHw7EeuUtYVE_EOHEA" keySequence="CTRL+SHIFT+," command="_wtYhwHw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuFsQHw7EeuUtYVE_EOHEA" keySequence="CTRL+SHIFT+." command="_wtYhxHw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuFsQXw7EeuUtYVE_EOHEA" keySequence="CTRL+SHIFT+/" command="_wtYhs3w7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuG6YHw7EeuUtYVE_EOHEA" keySequence="ALT+CTRL+[" command="_wtYhv3w7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuHhcHw7EeuUtYVE_EOHEA" keySequence="ALT+CTRL+]" command="_wtYhwnw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuIvkHw7EeuUtYVE_EOHEA" keySequence="CTRL+E" command="_wtYhq3w7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuIvknw7EeuUtYVE_EOHEA" keySequence="ALT+SHIFT+I" command="_wtYhvHw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuJWoHw7EeuUtYVE_EOHEA" keySequence="CTRL+SHIFT+R" command="_wtYhxnw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuJ9sHw7EeuUtYVE_EOHEA" keySequence="CTRL+SHIFT+S" command="_wtYhqXw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuKkwHw7EeuUtYVE_EOHEA" keySequence="CTRL+SHIFT+U" command="_wtYhp3w7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuLy4Hw7EeuUtYVE_EOHEA" keySequence="CTRL+SHIFT+W" command="_wtYhpHw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuNoEHw7EeuUtYVE_EOHEA" keySequence="CTRL+SHIFT+B" command="_wtYhoXw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuNoEXw7EeuUtYVE_EOHEA" keySequence="CTRL+SHIFT+D" command="_wtYhrXw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuOPIHw7EeuUtYVE_EOHEA" keySequence="CTRL+SHIFT+E" command="_wtYhuHw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuPdQHw7EeuUtYVE_EOHEA" keySequence="CTRL+[" command="_wtYho3w7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuQEUHw7EeuUtYVE_EOHEA" keySequence="ALT+CTRL+M" command="_wtYhunw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuQEUXw7EeuUtYVE_EOHEA" keySequence="CTRL+]" command="_wtYht3w7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuQEUnw7EeuUtYVE_EOHEA" keySequence="CTRL+T" command="_wtYhyHw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuQEU3w7EeuUtYVE_EOHEA" keySequence="CTRL+U" command="_wtYhynw7EeuUtYVE_EOHEA"/>
   </bindingTables>
   <bindingTables xmi:id="_Zy4aAiXyEeuEMI39je5SfA" elementId="org.eclipse.ui.contexts.window" bindingContext="_ZxYlOCXyEeuEMI39je5SfA">
     <bindings xmi:id="_Zy4aAyXyEeuEMI39je5SfA" keySequence="F2" command="_ZyjC5iXyEeuEMI39je5SfA"/>
@@ -263,6 +395,12 @@
     <bindings xmi:id="_ZzAV1SXyEeuEMI39je5SfA" keySequence="CTRL+F7" command="_Zyib1iXyEeuEMI39je5SfA"/>
     <bindings xmi:id="_ZzAV1iXyEeuEMI39je5SfA" keySequence="CTRL+F8" command="_ZylfJSXyEeuEMI39je5SfA"/>
     <bindings xmi:id="_ZzAV2yXyEeuEMI39je5SfA" keySequence="CTRL+F11" command="_ZynUUyXyEeuEMI39je5SfA"/>
+    <bindings xmi:id="_wuFFMHw7EeuUtYVE_EOHEA" keySequence="CTRL+CR" command="_wtYhwXw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuIvkXw7EeuUtYVE_EOHEA" keySequence="CTRL+8" command="_wtYhtXw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuIvk3w7EeuUtYVE_EOHEA" keySequence="CTRL+9" command="_wtYhqHw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuJ9sXw7EeuUtYVE_EOHEA" keySequence="CTRL+4" command="_wtYhrHw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuLL0Hw7EeuUtYVE_EOHEA" keySequence="CTRL+5" command="_wtYhonw7EeuUtYVE_EOHEA"/>
+    <bindings xmi:id="_wuLL0Xw7EeuUtYVE_EOHEA" keySequence="CTRL+6" command="_wtYhyXw7EeuUtYVE_EOHEA"/>
   </bindingTables>
   <bindingTables xmi:id="_Zy5BESXyEeuEMI39je5SfA" elementId="org.tizen.common.rest.modify.context" bindingContext="_ZypwqCXyEeuEMI39je5SfA">
     <bindings xmi:id="_Zy5BEiXyEeuEMI39je5SfA" keySequence="F2" command="_ZykRKSXyEeuEMI39je5SfA"/>
@@ -504,6 +642,46 @@
   <bindingTables xmi:id="_Zy-grCXyEeuEMI39je5SfA" elementId="org.tizen.common.rest.paste.context" bindingContext="_ZypwryXyEeuEMI39je5SfA">
     <bindings xmi:id="_Zy-grSXyEeuEMI39je5SfA" keySequence="CTRL+V" command="_ZynUyyXyEeuEMI39je5SfA"/>
   </bindingTables>
+  <bindingTables xmi:id="_xP3joXw7EeuUtYVE_EOHEA" bindingContext="_xP3joHw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP3jo3w7EeuUtYVE_EOHEA" bindingContext="_xP3jonw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP3jpXw7EeuUtYVE_EOHEA" bindingContext="_xP3jpHw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP3jp3w7EeuUtYVE_EOHEA" bindingContext="_xP3jpnw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4KsXw7EeuUtYVE_EOHEA" bindingContext="_xP4KsHw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4Ks3w7EeuUtYVE_EOHEA" bindingContext="_xP4Ksnw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4KtXw7EeuUtYVE_EOHEA" bindingContext="_xP4KtHw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4Kt3w7EeuUtYVE_EOHEA" bindingContext="_xP4Ktnw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4KuXw7EeuUtYVE_EOHEA" bindingContext="_xP4KuHw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4Ku3w7EeuUtYVE_EOHEA" bindingContext="_xP4Kunw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4KvXw7EeuUtYVE_EOHEA" bindingContext="_xP4KvHw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4Kv3w7EeuUtYVE_EOHEA" bindingContext="_xP4Kvnw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4KwXw7EeuUtYVE_EOHEA" bindingContext="_xP4KwHw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4xwXw7EeuUtYVE_EOHEA" bindingContext="_xP4xwHw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4xw3w7EeuUtYVE_EOHEA" bindingContext="_xP4xwnw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4xxXw7EeuUtYVE_EOHEA" bindingContext="_xP4xxHw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4xx3w7EeuUtYVE_EOHEA" bindingContext="_xP4xxnw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4xyXw7EeuUtYVE_EOHEA" bindingContext="_xP4xyHw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4xy3w7EeuUtYVE_EOHEA" bindingContext="_xP4xynw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4xzXw7EeuUtYVE_EOHEA" bindingContext="_xP4xzHw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP4xz3w7EeuUtYVE_EOHEA" bindingContext="_xP4xznw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP5Y0Xw7EeuUtYVE_EOHEA" bindingContext="_xP5Y0Hw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP5Y03w7EeuUtYVE_EOHEA" bindingContext="_xP5Y0nw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP5Y1Xw7EeuUtYVE_EOHEA" bindingContext="_xP5Y1Hw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP5Y13w7EeuUtYVE_EOHEA" bindingContext="_xP5Y1nw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP5Y2Xw7EeuUtYVE_EOHEA" bindingContext="_xP5Y2Hw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP5Y23w7EeuUtYVE_EOHEA" bindingContext="_xP5Y2nw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP5_4Xw7EeuUtYVE_EOHEA" bindingContext="_xP5_4Hw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP5_43w7EeuUtYVE_EOHEA" bindingContext="_xP5_4nw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP5_5Xw7EeuUtYVE_EOHEA" bindingContext="_xP5_5Hw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP5_53w7EeuUtYVE_EOHEA" bindingContext="_xP5_5nw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP5_6Xw7EeuUtYVE_EOHEA" bindingContext="_xP5_6Hw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP5_63w7EeuUtYVE_EOHEA" bindingContext="_xP5_6nw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP6m8Xw7EeuUtYVE_EOHEA" bindingContext="_xP6m8Hw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP6m83w7EeuUtYVE_EOHEA" bindingContext="_xP6m8nw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP6m9Xw7EeuUtYVE_EOHEA" bindingContext="_xP6m9Hw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP6m93w7EeuUtYVE_EOHEA" bindingContext="_xP6m9nw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP6m-Xw7EeuUtYVE_EOHEA" bindingContext="_xP6m-Hw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP6m-3w7EeuUtYVE_EOHEA" bindingContext="_xP6m-nw7EeuUtYVE_EOHEA"/>
+  <bindingTables xmi:id="_xP7OAXw7EeuUtYVE_EOHEA" bindingContext="_xP7OAHw7EeuUtYVE_EOHEA"/>
   <rootContext xmi:id="_ZxYlNyXyEeuEMI39je5SfA" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" name="In Dialogs and Windows" description="Either a dialog or a window is open">
     <children xmi:id="_ZxYlOCXyEeuEMI39je5SfA" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.ui.workbench" name="In Windows" description="A window is open">
       <children xmi:id="_ZxYlOSXyEeuEMI39je5SfA" elementId="org.eclipse.e4.ui.contexts.views" contributorURI="platform:/plugin/org.eclipse.ui.workbench" name="%bindingcontext.name.bindingView"/>
@@ -567,6 +745,46 @@
   </rootContext>
   <rootContext xmi:id="_ZypwhiXyEeuEMI39je5SfA" elementId="org.eclipse.ui.contexts.workbenchMenu" name="Workbench Menu" description="When no Workbench windows are active"/>
   <rootContext xmi:id="_ZypwlyXyEeuEMI39je5SfA" elementId="org.eclipse.ui.contexts.actionSet" name="Action Set" description="Parent context for action sets"/>
+  <rootContext xmi:id="_xP3joHw7EeuUtYVE_EOHEA" elementId="org.eclipse.cdt.debug.ui.debugActionSet" name="Auto::org.eclipse.cdt.debug.ui.debugActionSet"/>
+  <rootContext xmi:id="_xP3jonw7EeuUtYVE_EOHEA" elementId="org.eclipse.cdt.debug.ui.reverseDebuggingActionSet" name="Auto::org.eclipse.cdt.debug.ui.reverseDebuggingActionSet"/>
+  <rootContext xmi:id="_xP3jpHw7EeuUtYVE_EOHEA" elementId="org.eclipse.cdt.debug.ui.tracepointActionSet" name="Auto::org.eclipse.cdt.debug.ui.tracepointActionSet"/>
+  <rootContext xmi:id="_xP3jpnw7EeuUtYVE_EOHEA" elementId="org.eclipse.cdt.debug.ui.debugViewLayoutActionSet" name="Auto::org.eclipse.cdt.debug.ui.debugViewLayoutActionSet"/>
+  <rootContext xmi:id="_xP4KsHw7EeuUtYVE_EOHEA" elementId="org.eclipse.cdt.dsf.debug.ui.updateModes" name="Auto::org.eclipse.cdt.dsf.debug.ui.updateModes"/>
+  <rootContext xmi:id="_xP4Ksnw7EeuUtYVE_EOHEA" elementId="org.eclipse.cdt.make.ui.updateActionSet" name="Auto::org.eclipse.cdt.make.ui.updateActionSet"/>
+  <rootContext xmi:id="_xP4KtHw7EeuUtYVE_EOHEA" elementId="org.eclipse.cdt.make.ui.makeTargetActionSet" name="Auto::org.eclipse.cdt.make.ui.makeTargetActionSet"/>
+  <rootContext xmi:id="_xP4Ktnw7EeuUtYVE_EOHEA" elementId="org.eclipse.cdt.ui.CodingActionSet" name="Auto::org.eclipse.cdt.ui.CodingActionSet"/>
+  <rootContext xmi:id="_xP4KuHw7EeuUtYVE_EOHEA" elementId="org.eclipse.cdt.ui.SearchActionSet" name="Auto::org.eclipse.cdt.ui.SearchActionSet"/>
+  <rootContext xmi:id="_xP4Kunw7EeuUtYVE_EOHEA" elementId="org.eclipse.cdt.ui.NavigationActionSet" name="Auto::org.eclipse.cdt.ui.NavigationActionSet"/>
+  <rootContext xmi:id="_xP4KvHw7EeuUtYVE_EOHEA" elementId="org.eclipse.cdt.ui.OpenActionSet" name="Auto::org.eclipse.cdt.ui.OpenActionSet"/>
+  <rootContext xmi:id="_xP4Kvnw7EeuUtYVE_EOHEA" elementId="org.eclipse.cdt.ui.buildConfigActionSet" name="Auto::org.eclipse.cdt.ui.buildConfigActionSet"/>
+  <rootContext xmi:id="_xP4KwHw7EeuUtYVE_EOHEA" elementId="org.eclipse.cdt.ui.CElementCreationActionSet" name="Auto::org.eclipse.cdt.ui.CElementCreationActionSet"/>
+  <rootContext xmi:id="_xP4xwHw7EeuUtYVE_EOHEA" elementId="org.eclipse.cdt.ui.text.c.actionSet.presentation" name="Auto::org.eclipse.cdt.ui.text.c.actionSet.presentation"/>
+  <rootContext xmi:id="_xP4xwnw7EeuUtYVE_EOHEA" elementId="org.eclipse.debug.ui.breakpointActionSet" name="Auto::org.eclipse.debug.ui.breakpointActionSet"/>
+  <rootContext xmi:id="_xP4xxHw7EeuUtYVE_EOHEA" elementId="org.eclipse.debug.ui.debugActionSet" name="Auto::org.eclipse.debug.ui.debugActionSet"/>
+  <rootContext xmi:id="_xP4xxnw7EeuUtYVE_EOHEA" elementId="org.eclipse.debug.ui.launchActionSet" name="Auto::org.eclipse.debug.ui.launchActionSet"/>
+  <rootContext xmi:id="_xP4xyHw7EeuUtYVE_EOHEA" elementId="org.eclipse.debug.ui.profileActionSet" name="Auto::org.eclipse.debug.ui.profileActionSet"/>
+  <rootContext xmi:id="_xP4xynw7EeuUtYVE_EOHEA" elementId="org.eclipse.egit.ui.gitaction" name="Auto::org.eclipse.egit.ui.gitaction"/>
+  <rootContext xmi:id="_xP4xzHw7EeuUtYVE_EOHEA" elementId="org.eclipse.egit.ui.navigation" name="Auto::org.eclipse.egit.ui.navigation"/>
+  <rootContext xmi:id="_xP4xznw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.cheatsheets.actionSet" name="Auto::org.eclipse.ui.cheatsheets.actionSet"/>
+  <rootContext xmi:id="_xP5Y0Hw7EeuUtYVE_EOHEA" elementId="org.eclipse.search.searchActionSet" name="Auto::org.eclipse.search.searchActionSet"/>
+  <rootContext xmi:id="_xP5Y0nw7EeuUtYVE_EOHEA" elementId="org.eclipse.team.ui.actionSet" name="Auto::org.eclipse.team.ui.actionSet"/>
+  <rootContext xmi:id="_xP5Y1Hw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.edit.text.actionSet.annotationNavigation" name="Auto::org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+  <rootContext xmi:id="_xP5Y1nw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.edit.text.actionSet.navigation" name="Auto::org.eclipse.ui.edit.text.actionSet.navigation"/>
+  <rootContext xmi:id="_xP5Y2Hw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo" name="Auto::org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+  <rootContext xmi:id="_xP5Y2nw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.externaltools.ExternalToolsSet" name="Auto::org.eclipse.ui.externaltools.ExternalToolsSet"/>
+  <rootContext xmi:id="_xP5_4Hw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.NavigateActionSet" name="Auto::org.eclipse.ui.NavigateActionSet"/>
+  <rootContext xmi:id="_xP5_4nw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.actionSet.keyBindings" name="Auto::org.eclipse.ui.actionSet.keyBindings"/>
+  <rootContext xmi:id="_xP5_5Hw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.WorkingSetModificationActionSet" name="Auto::org.eclipse.ui.WorkingSetModificationActionSet"/>
+  <rootContext xmi:id="_xP5_5nw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.WorkingSetActionSet" name="Auto::org.eclipse.ui.WorkingSetActionSet"/>
+  <rootContext xmi:id="_xP5_6Hw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.actionSet.openFiles" name="Auto::org.eclipse.ui.actionSet.openFiles"/>
+  <rootContext xmi:id="_xP5_6nw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.edit.text.actionSet.presentation" name="Auto::org.eclipse.ui.edit.text.actionSet.presentation"/>
+  <rootContext xmi:id="_xP6m8Hw7EeuUtYVE_EOHEA" elementId="org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet" name="Auto::org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet"/>
+  <rootContext xmi:id="_xP6m8nw7EeuUtYVE_EOHEA" elementId="org.eclipse.wst.jsdt.ui.JavaActionSet" name="Auto::org.eclipse.wst.jsdt.ui.JavaActionSet"/>
+  <rootContext xmi:id="_xP6m9Hw7EeuUtYVE_EOHEA" elementId="org.eclipse.wst.jsdt.ui.A_OpenActionSet" name="Auto::org.eclipse.wst.jsdt.ui.A_OpenActionSet"/>
+  <rootContext xmi:id="_xP6m9nw7EeuUtYVE_EOHEA" elementId="org.eclipse.wst.jsdt.ui.CodingActionSet" name="Auto::org.eclipse.wst.jsdt.ui.CodingActionSet"/>
+  <rootContext xmi:id="_xP6m-Hw7EeuUtYVE_EOHEA" elementId="org.eclipse.wst.jsdt.ui.SearchActionSet" name="Auto::org.eclipse.wst.jsdt.ui.SearchActionSet"/>
+  <rootContext xmi:id="_xP6m-nw7EeuUtYVE_EOHEA" elementId="org.eclipse.debug.ui.SmartLaunchActionSet" name="Auto::org.eclipse.debug.ui.SmartLaunchActionSet"/>
+  <rootContext xmi:id="_xP7OAHw7EeuUtYVE_EOHEA" elementId="org.tizen.web.browser.actionSet" name="Auto::org.tizen.web.browser.actionSet"/>
   <descriptors xmi:id="_Z1oMACXyEeuEMI39je5SfA" elementId="org.eclipse.e4.ui.compatibility.editor" allowMultiple="true" category="org.eclipse.e4.primaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor">
     <tags>Editor</tags>
   </descriptors>
@@ -726,9 +944,9 @@
     <tags>View</tags>
     <tags>categoryTag:Git</tags>
   </descriptors>
-  <descriptors xmi:id="_Z188ISXyEeuEMI39je5SfA" elementId="org.eclipse.gef.ui.palette_view" label="Palette" iconURI="platform:/plugin/org.eclipse.gef/icons/palette_view.gif" tooltip="" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
-    <persistedState key="originalCompatibilityViewClass" value="org.eclipse.gef.ui.views.palette.PaletteView"/>
-    <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.gef"/>
+  <descriptors xmi:id="_Z188ISXyEeuEMI39je5SfA" elementId="org.eclipse.gef.ui.palette_view" label="Palette" iconURI="platform:/plugin/org.tizen.efluibuilder/res/icons/eview20/view_palette.png" tooltip="" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.tizen.efluibuilder.ui.editor.internal.gef.ui.views.palette.PaletteView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.tizen.efluibuilder"/>
     <tags>View</tags>
     <tags>categoryTag:General</tags>
   </descriptors>
@@ -891,6 +1109,66 @@
   <descriptors xmi:id="_Z2EQ4CXyEeuEMI39je5SfA" elementId="org.tizen.common.connection.log.LogView" label="Log" iconURI="platform:/plugin/org.tizen.common.connection/icons/log/view_icon_log.png" tooltip="" allowMultiple="true" category="Tizen" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <persistedState key="originalCompatibilityViewClass" value="org.tizen.common.connection.logview.view.LogView"/>
     <persistedState key="originalCompatibilityViewBundle" value="org.tizen.common.connection"/>
+    <tags>View</tags>
+    <tags>categoryTag:Tizen</tags>
+  </descriptors>
+  <descriptors xmi:id="_wxp9oHw7EeuUtYVE_EOHEA" elementId="org.tizen.nativecommon.rm.ui.view" label="Resource Manager" iconURI="platform:/plugin/org.tizen.nativecommon/icons/rm/eview20/view_icon_resource.png" tooltip="" category="Tizen" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.tizen.nativecommon.rm.ui.view.TizenRMView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.tizen.nativecommon"/>
+    <tags>View</tags>
+    <tags>categoryTag:Tizen</tags>
+  </descriptors>
+  <descriptors xmi:id="_wxry0Hw7EeuUtYVE_EOHEA" elementId="org.tizen.nativecore.csviewer.view.CallStackView" label="Call Stack" iconURI="platform:/plugin/org.tizen.nativecore.csviewer/icons/eview20/view_callstack.png" tooltip="" category="Tizen" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.tizen.nativecore.csviewer.view.CallStackView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.tizen.nativecore.csviewer"/>
+    <tags>View</tags>
+    <tags>categoryTag:Tizen</tags>
+  </descriptors>
+  <descriptors xmi:id="_wxsZ4Hw7EeuUtYVE_EOHEA" elementId="org.tizen.nativecommon.ui.view.tizensa" label="Potential Bugs" iconURI="platform:/plugin/org.tizen.nativecommon.ui/icons/eview20/view_potential_bug.png" tooltip="" category="Tizen" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.tizen.nativecommon.ui.sa.view.TizenSAView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.tizen.nativecommon.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Tizen</tags>
+  </descriptors>
+  <descriptors xmi:id="_wxtA8Hw7EeuUtYVE_EOHEA" elementId="org.tizen.efluibuilder.ui.view.databinding.DataBindingView" label="Data Binding View" iconURI="platform:/plugin/org.tizen.efluibuilder/res/icons/databinding/databinding.png" tooltip="" category="Tizen" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.tizen.efluibuilder.ui.view.databinding.DataBindingView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.tizen.efluibuilder"/>
+    <tags>View</tags>
+    <tags>categoryTag:Tizen</tags>
+  </descriptors>
+  <descriptors xmi:id="_wxtA8Xw7EeuUtYVE_EOHEA" elementId="org.eclipse.linuxtools.valgrind.ui.valgrindview" label="Valgrind" iconURI="platform:/plugin/org.eclipse.linuxtools.valgrind.ui/icons/eview20/view_valgrind.png" tooltip="" category="Tizen" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.eclipse.linuxtools.valgrind.ui.ValgrindViewPart"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.linuxtools.valgrind.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Tizen</tags>
+  </descriptors>
+  <descriptors xmi:id="_wxtoAHw7EeuUtYVE_EOHEA" elementId="codecoverage.ui.CovLaunchTab" label="Code Coverage" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.tizen.profiler.codecoverage.ui.CovLaunchTab"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.tizen.profiler.codecoverage"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_wxtoAXw7EeuUtYVE_EOHEA" elementId="org.tizen.tizenunittest.ResultViewId" label="Native Unit Test Result" iconURI="platform:/plugin/org.tizen.tizenunittest.gtest/icons/eview20/view_icon_test_result.png" tooltip="" category="Tizen" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.tizen.tizenunittest.gtest.resultview.TestResultView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.tizen.tizenunittest.gtest"/>
+    <tags>View</tags>
+    <tags>categoryTag:Tizen</tags>
+  </descriptors>
+  <descriptors xmi:id="_wxuPEHw7EeuUtYVE_EOHEA" elementId="org.tizen.tizenunittest.ExplorerViewId" label="Native Unit Test Explorer" iconURI="platform:/plugin/org.tizen.tizenunittest.gtest/icons/eview20/view_icon_test_exploer.png" tooltip="" category="Tizen" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.tizen.tizenunittest.gtest.gtest.testexplorer.TXView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.tizen.tizenunittest.gtest"/>
+    <tags>View</tags>
+    <tags>categoryTag:Tizen</tags>
+  </descriptors>
+  <descriptors xmi:id="_wxu2IHw7EeuUtYVE_EOHEA" elementId="org.eclipse.linuxtools.asan.ui.AddressSanitizerView" label="Memory Errors" iconURI="platform:/plugin/org.eclipse.linuxtools.asan/icons/addressSanitizerViewer.png" tooltip="" category="Tizen" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.eclipse.linuxtools.asan.ui.AddressSanitizerView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.linuxtools.asan"/>
+    <tags>View</tags>
+    <tags>categoryTag:Tizen</tags>
+  </descriptors>
+  <descriptors xmi:id="_wxu2IXw7EeuUtYVE_EOHEA" elementId="org.tizen.web.unittest.views.resultView" label="Web Unit Test Result" iconURI="platform:/plugin/org.tizen.web.unittest/icons/eview20/view_wutr.png" tooltip="" category="Tizen" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.tizen.web.unittest.resultview.ui.WUTResultView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.tizen.web.unittest"/>
     <tags>View</tags>
     <tags>categoryTag:Tizen</tags>
   </descriptors>
@@ -1837,6 +2115,56 @@
   <commands xmi:id="_aHQukyXyEeuEMI39je5SfA" elementId="AUTOGEN:::variableViewActions/org.eclipse.wst.jsdt.debug.ui.variableview.show.functions" commandName="Show function variables" description="Show or hide function variables" category="_ZyhNsSXyEeuEMI39je5SfA"/>
   <commands xmi:id="_aHQulCXyEeuEMI39je5SfA" elementId="AUTOGEN:::variableViewActions/org.eclipse.wst.jsdt.debug.ui.variableview.show.this" commandName="Show 'this' variable" description="Show or hide the this variable" category="_ZyhNsSXyEeuEMI39je5SfA"/>
   <commands xmi:id="_aHQulSXyEeuEMI39je5SfA" elementId="AUTOGEN:::variableViewActions/org.eclipse.wst.jsdt.debug.ui.variableview.show.prototypes" commandName="Show proto variables" description="Show or hide proto variables" category="_ZyhNsSXyEeuEMI39je5SfA"/>
+  <commands xmi:id="_wtX6kHw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.increment_number_by_10" commandName="Increment number by 10" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtX6kXw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.increment_number_by_01" commandName="Increment number by 0.1" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtX6knw7EeuUtYVE_EOHEA" elementId="org.tizen.web.jsa.bugdetecter.commands.analysis" commandName="Run JS Rules" category="_ZyhNsSXyEeuEMI39je5SfA"/>
+  <commands xmi:id="_wtX6k3w7EeuUtYVE_EOHEA" elementId="org.tizen.valgrind.command.saveFile" commandName="Save" description="Save" category="_wtWscXw7EeuUtYVE_EOHEA">
+    <parameters xmi:id="_wtYhoHw7EeuUtYVE_EOHEA" elementId="org.tizen.valgrind.command.saveFile.parameter" name="Extension" optional="false"/>
+  </commands>
+  <commands xmi:id="_wtYhoXw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.reflect_css_value" commandName="Reflect CSS Value" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhonw7EeuUtYVE_EOHEA" elementId="org.tizen.web.compressor.commands.Minifier" commandName="Code Minifier" description="Code Minifier" category="_wtWscnw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYho3w7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.decrement_number_by_1" commandName="Decrement number by 1" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhpHw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.wrap_with_abbreviation" commandName="Wrap With Abbreviation..." category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhpXw7EeuUtYVE_EOHEA" elementId="org.tizen.nativecore.build.BuildPackageObjectAction" commandName="Build Signed Package" description="TPK Packaging" category="_ZyhNsSXyEeuEMI39je5SfA"/>
+  <commands xmi:id="_wtYhpnw7EeuUtYVE_EOHEA" elementId="org.tizen.nativecommon.ui.tizensa.command" commandName="TizenSA build command" category="_ZyhNsSXyEeuEMI39je5SfA"/>
+  <commands xmi:id="_wtYhp3w7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.update_image_size" commandName="Update Image Size" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhqHw7EeuUtYVE_EOHEA" elementId="org.tizen.web.edtior.html.commands.ScriptCodeExtractor" commandName="Script Code Extraction" description="Script Code Extraction" category="_wtWFZHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhqXw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.match_pair_outward" commandName="Match Pair Outward" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhqnw7EeuUtYVE_EOHEA" elementId="org.tizen.web.jsa.jalangi.actions.device.toolbar" commandName="Check Stale Object(Tizen Device)" category="_ZyhNsSXyEeuEMI39je5SfA"/>
+  <commands xmi:id="_wtYhq3w7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.expand_abbreviation" commandName="Expand Abbreviation" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhrHw7EeuUtYVE_EOHEA" elementId="org.tizen.web.browser.commands.HTMLPreview" commandName="Preview" description="Preview" category="_wtWFY3w7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhrXw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.match_pair_inward" commandName="Match Pair Inward" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhrnw7EeuUtYVE_EOHEA" elementId="org.tizen.uibuilder.projectmigrator.convertercommand" commandName="EnableNUIBCommand" category="_ZyhNsSXyEeuEMI39je5SfA"/>
+  <commands xmi:id="_wtYhr3w7EeuUtYVE_EOHEA" elementId="org.tizen.web.privilege.commands.checkPrivilege" commandName="Check Privilege" category="_wtWFYnw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhsHw7EeuUtYVE_EOHEA" elementId="org.tizen.nativecore.imagecompressor.command" commandName="Image compressor command" category="_ZyhNsSXyEeuEMI39je5SfA"/>
+  <commands xmi:id="_wtYhsXw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.decrement_number_by_10" commandName="Decrement number by 10" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhsnw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.decrement_number_by_01" commandName="Decrement number by 0.1" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhs3w7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.toggle_comment" commandName="Toggle Comment" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhtHw7EeuUtYVE_EOHEA" elementId="org.tizen.uibuilder.projectmigrator.manageuserviewcommand" commandName="UserViewCommand" category="_ZyhNsSXyEeuEMI39je5SfA"/>
+  <commands xmi:id="_wtYhtXw7EeuUtYVE_EOHEA" elementId="org.tizen.web.edtior.html.commands.Breadcrumb" commandName="Toggle Breadcrumb" description="Toggle Breadcrumb" category="_wtWFZHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhtnw7EeuUtYVE_EOHEA" elementId="org.tizen.web.localization.commands.localizeWidgetCommand" commandName="Localization Wizard..." category="_wtWsc3w7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYht3w7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.increment_number_by_1" commandName="Increment number by 1" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhuHw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.evaluate_math_expression" commandName="Evaluate Math Expression" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhuXw7EeuUtYVE_EOHEA" elementId="Json.formatText" commandName="Format Text" description="Format Json Text" category="_wtWscHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhunw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.merge_lines" commandName="Merge Lines" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhu3w7EeuUtYVE_EOHEA" elementId="org.tizen.web.ui.command.popupMenu.buildPackage" commandName="Build Signed Package" category="_ZyhNsSXyEeuEMI39je5SfA"/>
+  <commands xmi:id="_wtYhvHw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.encode_decode_data_url" commandName="Encode/Decode Data:URL" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhvXw7EeuUtYVE_EOHEA" elementId="org.tizen.apichecker.command" commandName="Tizen API Checker Command" category="_ZyhNsSXyEeuEMI39je5SfA"/>
+  <commands xmi:id="_wtYhvnw7EeuUtYVE_EOHEA" elementId="org.tizen.web.csslint.commands.checkCSS" commandName="Check CSS" category="_wtWFYnw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhv3w7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.prev_edit_point" commandName="Previous Edit Point" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhwHw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.select_previous_item" commandName="Select Previous Item" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhwXw7EeuUtYVE_EOHEA" elementId="org.tizen.ocf.tizen.SmartThingsCodeGenerator" commandName="Manage ST-Things Resource" category="_wtWsdXw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhwnw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.next_edit_point" commandName="Next Edit Point" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhw3w7EeuUtYVE_EOHEA" elementId="org.tizen.web.jsa.jalangi.actions.device" commandName="Run Tizen Device" category="_ZyhNsSXyEeuEMI39je5SfA"/>
+  <commands xmi:id="_wtYhxHw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.select_next_item" commandName="Select Next Item" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhxXw7EeuUtYVE_EOHEA" elementId="org.tizen.web.jshint.commands.checkJS" commandName="Check JS" category="_wtWFYnw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhxnw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.remove_tag" commandName="Remove Tag" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhx3w7EeuUtYVE_EOHEA" elementId="org.tizen.web.jsa.jalangi.actions.browser" commandName="Run PC Browser" category="_ZyhNsSXyEeuEMI39je5SfA"/>
+  <commands xmi:id="_wtYhyHw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.matching_pair" commandName="Go to Matching Pair" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhyXw7EeuUtYVE_EOHEA" elementId="org.tizen.web.compressor.commands.Beautifier" commandName="Code Beautifier" description="Code Beautifier" category="_wtWscnw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_wtYhynw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.split_join_tag" commandName="Split/Join Tag" category="_wtWsdHw7EeuUtYVE_EOHEA"/>
+  <commands xmi:id="_xK49AHw7EeuUtYVE_EOHEA" elementId="AUTOGEN:::org.tizen.web.browser.actionSet/org.tizen.web.browser.HTMLPreviewAction" commandName="Preview" description="Preview" category="_ZyhNsSXyEeuEMI39je5SfA"/>
+  <commands xmi:id="_xK5kEHw7EeuUtYVE_EOHEA" elementId="AUTOGEN:::org.tizen.nativecore.csviewer.view.CallStackView.viewContribution/org.tizen.nativecore.csviewer.action.OpenCSFile" commandName="Open File" description="Open Call Stack File" category="_ZyhNsSXyEeuEMI39je5SfA"/>
   <addons xmi:id="_ZxYlOyXyEeuEMI39je5SfA" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_ZxYlPCXyEeuEMI39je5SfA" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_ZxYlPSXyEeuEMI39je5SfA" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -1848,7 +2176,7 @@
   <addons xmi:id="_ZxYlQyXyEeuEMI39je5SfA" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_ZxYlRCXyEeuEMI39je5SfA" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_Zxc2oCXyEeuEMI39je5SfA" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_wvCugHw7EeuUtYVE_EOHEA" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_ZygmkCXyEeuEMI39je5SfA" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_ZygmkSXyEeuEMI39je5SfA" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
@@ -1891,4 +2219,15 @@
   <categories xmi:id="_ZyhNsiXyEeuEMI39je5SfA" elementId="org.eclipse.wst.jsdt.ui.category.refactoring" name="Refactor - JavaScript" description="JavaScript Refactoring Actions"/>
   <categories xmi:id="_ZyhNsyXyEeuEMI39je5SfA" elementId="org.eclipse.cdt.debug.ui.category.tracing" name="Tracing Commands" description="Category for Tracing Commands"/>
   <categories xmi:id="_ZyhNtCXyEeuEMI39je5SfA" elementId="org.eclipse.cdt.managedbuilder.ui.category.build" name="C/C++ Build" description="C/C++ Build Actions"/>
+  <categories xmi:id="_wtWFYXw7EeuUtYVE_EOHEA" elementId="org.tizen.web.ui.category.popupMenu.buildPackage" name="Build Signed Package"/>
+  <categories xmi:id="_wtWFYnw7EeuUtYVE_EOHEA" elementId="org.tizen.web.editor.category.Checker" name="Web Resource Checker" description="Web Resource Checker"/>
+  <categories xmi:id="_wtWFY3w7EeuUtYVE_EOHEA" elementId="org.tizen.web.browser.category" name="HTML Editing"/>
+  <categories xmi:id="_wtWFZHw7EeuUtYVE_EOHEA" elementId="org.tizen.web.edtior.html.commands.category" name="Tizen HTML Editor"/>
+  <categories xmi:id="_wtWFZXw7EeuUtYVE_EOHEA" elementId="org.tizen.web.jsa.tools" name="JSA Tools"/>
+  <categories xmi:id="_wtWscHw7EeuUtYVE_EOHEA" elementId="Json.format" name="format"/>
+  <categories xmi:id="_wtWscXw7EeuUtYVE_EOHEA" elementId="org.tizen.valgrind.ui.command.category" name="Valgrind" description="Commands related to the Valgrind"/>
+  <categories xmi:id="_wtWscnw7EeuUtYVE_EOHEA" elementId="org.tizen.web.compressor.commands.category" name="Web Resource"/>
+  <categories xmi:id="_wtWsc3w7EeuUtYVE_EOHEA" elementId="org.tizen.web.localization.commands.category" name="Localization Category"/>
+  <categories xmi:id="_wtWsdHw7EeuUtYVE_EOHEA" elementId="io.emmet.eclipse.commands.category" name="Emmet"/>
+  <categories xmi:id="_wtWsdXw7EeuUtYVE_EOHEA" elementId="org.tizen.ocf.tizen.category" name="Smart Things"/>
 </application:Application>

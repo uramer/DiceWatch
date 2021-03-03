@@ -57,8 +57,8 @@ namespace Dice.Views
 
     public void Discard()
     {
-      provider.Discard(page);
-      if (provider.Count() == 0 || page == 0)
+      setCollection.Discard(page);
+      if (setCollection.Count() == 0 || page == 0)
         ShowPage(0);
       else
         PrevPage();

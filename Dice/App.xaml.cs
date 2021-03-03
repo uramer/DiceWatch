@@ -7,41 +7,41 @@ using Xamarin.Forms.Xaml;
 
 namespace Dice
 {
-  public partial class App : Application
-  {
-    public  StorageService storage { get; }
-    public DiceSetProvider diceProvider { get; }
-
-    public App()
+    public partial class App : Application
     {
-      storage = new StorageService();
-      diceProvider = new DiceSetProvider();
-      InitializeComponent();
+        public Storage storage { get; }
+        public DiceSetCollection diceSets { get; }
+
+        public App()
+        {
+            storage = new Storage();
+            diceSets = new DiceSetCollection();
+            InitializeComponent();
+        }
+
+        public delegate void EmptyEvent();
+
+        public event EventHandler Loaded;
+
+        private async void LoadSets()
+        {
+            diceSets.Load(await storage.ReadSets());
+            Loaded?.Invoke(this, new EventArgs());
+        }
+
+        private async void SaveSets()
+        {
+            await storage.WriteSets(diceSets.Save());
+        }
+
+        protected override void OnSleep()
+        {
+            SaveSets();
+        }
+
+        protected override void OnResume()
+        {
+            LoadSets();
+        }
     }
-
-    public delegate void EmptyEvent();
-
-    public event EventHandler Loaded;
-
-    private async void LoadSets()
-    {
-      diceProvider.Load(await storage.ReadSets());
-      Loaded?.Invoke(this, new EventArgs());
-    }
-
-    private async void SaveSets()
-    {
-      await storage.WriteSets(diceProvider.Save());
-    }
-
-    protected override void OnSleep()
-    {
-      SaveSets();
-    }
-
-    protected override void OnResume()
-    {
-      LoadSets();
-    }
-  }
 }

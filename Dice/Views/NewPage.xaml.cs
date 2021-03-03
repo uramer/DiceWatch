@@ -7,10 +7,10 @@ namespace Dice.Views
 {
   public partial class NewPage : ContentPage
   {
-    private DiceSetProvider provider;
+    private DiceSetCollection provider;
     private RollPage rollPage;
 
-    public NewPage(DiceSetProvider provider, RollPage rollPage)
+    public NewPage(DiceSetCollection provider, RollPage rollPage)
     {
       this.provider = provider;
       this.rollPage = rollPage;
