@@ -10,17 +10,17 @@ namespace Dice.Services
 {
     public class Storage
     {
-        private const string privilege = "http://tizen.org/privilege/mediastorage";
-        private string path;
-        private bool initialized;
+        private const string PRIVILIGE = "http://tizen.org/privilege/mediastorage";
+        private string Path;
+        private bool Initialized;
 
         public Storage()
         {
-            initialized = false;
+            Initialized = false;
             PrivacyPrivilegeManager.ResponseContext context = null;
-            if (PrivacyPrivilegeManager.GetResponseContext(privilege).TryGetTarget(out context))
+            if (PrivacyPrivilegeManager.GetResponseContext(PRIVILIGE).TryGetTarget(out context))
             {
-                context.ResponseFetched += PrivilegeResponse; ;
+                context.ResponseFetched += PrivilegeResponse;
             }
             Initialize();
         }
@@ -33,36 +33,37 @@ namespace Dice.Services
 
         private void Log(string s)
         {
-            Logger.Info("[Storage]" + s);
+            Logger.Debug("[Storage]" + s);
         }
 
         private void Initialize()
         {
-            CheckResult result = PrivacyPrivilegeManager.CheckPermission(privilege);
+            if (Initialized)
+                return;
+
+            CheckResult result = PrivacyPrivilegeManager.CheckPermission(PRIVILIGE);
             if (result != CheckResult.Allow)
             {
-                PrivacyPrivilegeManager.RequestPermission(privilege);
+                PrivacyPrivilegeManager.RequestPermission(PRIVILIGE);
                 return;
             }
+
             var storage = StorageManager.Storages
-              .Where(s => s.StorageType == StorageArea.Internal)
-              .FirstOrDefault();
-            path = storage.GetAbsolutePath(DirectoryType.Documents);
-            path = Path.Combine(path, "dice");
-            Directory.CreateDirectory(path);
-            path = Path.Combine(path, "dice.bin");
-            Log(path);
-            initialized = true;
+                .Where(s => s.StorageType == StorageArea.Internal)
+                .FirstOrDefault();
+            Path = storage.GetAbsolutePath(DirectoryType.Documents);
+            Path = System.IO.Path.Combine(Path, "dice");
+            Directory.CreateDirectory(Path);
+            Path = System.IO.Path.Combine(Path, "dice.bin");
+            Log(Path);
+            Initialized = true;
         }
 
-        private static byte[] Serialize(IList<DiceSet> sets)
+        private async Task<byte[]> Read()
         {
-            var bytes = new List<byte>();
-            foreach (var set in sets)
-            {
-                bytes.AddRange(set.Serialize());
-            }
-            return bytes.ToArray();
+            if (!Initialized)
+                throw new IOException("Storage is not initialized!");
+            return await File.ReadAllBytesAsync(Path).ConfigureAwait(false);
         }
 
         private IList<DiceSet> Deserialize(byte[] input)
@@ -72,31 +73,12 @@ namespace Dice.Services
             var result = new List<DiceSet>();
             while (i < input.Length)
             {
-                int length;
-                result.Add(DiceSet.Deserialize(input, out length, i));
+                (var diceSet, var length) = DiceSet.Deserialize(input, i);
+                result.Add(diceSet);
                 i += length;
             }
             Log($"Loaded {result.Count} sets!");
             return result;
-        }
-
-        private async Task Write(byte[] bytes)
-        {
-            if (!initialized) throw new IOException("Storage is not initialized!");
-            Log($"Writing {bytes.Length} bytes!");
-            await File.WriteAllBytesAsync(path, bytes).ConfigureAwait(false);
-        }
-
-        private async Task<byte[]> Read()
-        {
-            if (!initialized) throw new IOException("Storage is not initialized!");
-            return await File.ReadAllBytesAsync(path).ConfigureAwait(false);
-        }
-
-        public async Task WriteSets(IList<DiceSet> sets)
-        {
-            Log($"Saving {sets.Count} sets!");
-            await Write(Serialize(sets)).ConfigureAwait(false);
         }
 
         public async Task<IList<DiceSet>> ReadSets()
@@ -109,6 +91,25 @@ namespace Dice.Services
             {
                 return new List<DiceSet>();
             }
+        }
+
+        private static byte[] Serialize(IList<DiceSet> sets)
+        {
+            return sets.SelectMany(s => s.Serialize()).ToArray();
+        }
+
+        private async Task Write(byte[] bytes)
+        {
+            if (!Initialized)
+                throw new IOException("Storage is not initialized!");
+            Log($"Writing {bytes.Length} bytes!");
+            await File.WriteAllBytesAsync(Path, bytes).ConfigureAwait(false);
+        }
+
+        public async Task WriteSets(IList<DiceSet> sets)
+        {
+            Log($"Saving {sets.Count} sets!");
+            await Write(Serialize(sets)).ConfigureAwait(false);
         }
     }
 }

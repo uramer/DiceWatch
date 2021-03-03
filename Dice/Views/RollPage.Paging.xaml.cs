@@ -1,5 +1,4 @@
 ﻿using Dice.Dice;
-using Dice.Render;
 using Dice.Services;
 using Tizen.Wearable.CircularUI.Forms;
 using Xamarin.Forms;
@@ -8,33 +7,33 @@ namespace Dice.Views
 {
     partial class RollPage : ContentPage
     {
-        private DiceSetCollection setCollection;
-        private DiceSet set;
-        private int page;
+        private DiceSetCollection SetCollection;
+        private DiceSet Set;
+        private int Page;
 
         private void PreparePaging()
         {
-            setCollection = app.diceSets;
-            page = 0;
-            set = setCollection.Get(page);
+            SetCollection = App.DiceSets;
+            Page = 0;
+            Set = SetCollection.Get(Page);
 
             RotaryEventManager.Rotated += OnRotated;
         }
         public void NextPage()
         {
-            SwitchPage(page + 1);
+            SwitchPage(Page + 1);
         }
 
         public void PrevPage()
         {
-            SwitchPage(page - 1);
+            SwitchPage(Page - 1);
         }
 
         public void SwitchPage(int newPage)
         {
             if (newPage < 0)
                 return;
-            else if (newPage >= setCollection.Count())
+            else if (newPage >= SetCollection.Count())
                 ShowNewPage();
             else
                 ShowPage(newPage);
@@ -42,21 +41,22 @@ namespace Dice.Views
 
         private void ShowPage(int newPage)
         {
-            page = newPage;
-            set = setCollection.Get(page);
+            Page = newPage;
+            Set = SetCollection.Get(Page);
             UpdateDefault();
             RenderPageBar();
         }
 
         private void ShowNewPage()
         {
-            Navigation.PushAsync(new NewPage(setCollection, this));
+            Navigation.PushAsync(new NewPage(SetCollection, this));
         }
 
         void OnRotated(object sender, RotaryEventArgs args)
         {
-            if (!appeared)
+            if (!Appeared)
                 return;
+
             if (args.IsClockwise)
                 NextPage();
             else
@@ -65,8 +65,7 @@ namespace Dice.Views
 
         private void RenderPageBar()
         {
-            pageBar.Content = PageBar.Render(page, setCollection.Count());
-            Logger.Info("Render page bar");
+            PageBar.Content = Render.PageBar.Render(Page, SetCollection.Count());
         }
     }
 }

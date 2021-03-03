@@ -7,67 +7,64 @@ using Xamarin.Forms;
 
 namespace Dice.Views
 {
-  public partial class DicePage : ContentPage
-  {
-    private DiceSet set;
-    private readonly Vibrator vibrator;
-
-    public DicePage(DiceSet set)
+    public partial class DicePage : ContentPage
     {
-      this.set = set;
-      vibrator = Vibrator.Vibrators[0];
+        private readonly DiceSet Set;
+        private readonly Vibrator Vibrator;
 
-      InitializeComponent();
-
-      AddHandlers();
-
-      RenderDiceButtons();
-    }
-
-    private void Add(D type, View sender)
-    {
-      sender.FadeTo(0.5, 150);
-      vibrator.Vibrate(150, 50);
-      set.Add(type);
-      sender.FadeTo(1.0, 150);
-    }
-
-    private Dictionary<D, EventHandler> addHandlers;
-    private void AddHandlers()
-    {
-      addHandlers = new Dictionary<D, EventHandler>();
-      foreach (D type in DiceType.Types) {
-        addHandlers.Add(type, (object sender, EventArgs e) => Add(type, sender as View));
-      }
-    }
-
-    private const int startRow = 1;
-    private const int startColumn = 1;
-    private const int rowSize = 3;
-    private void RenderDiceButtons()
-    {
-      int row = startRow;
-      int column = startColumn;
-      foreach (D type in DiceType.Types)
-      {
-        var die = DiceType.get(type);
-        var dieItem = new ImageButton();
-        dieItem.Source = DiceRenderer.Image(type, die.max);
-        dieItem.Clicked += addHandlers[type];
-
-        diceGrid.Children.Add(dieItem, column, row);
-        column++;
-        if(column == startColumn + rowSize)
+        public DicePage(DiceSet set)
         {
-          column = startColumn;
-          row++;
-        }
-      }
-    }
+            Set = set;
+            Vibrator = Vibrator.Vibrators[0];
 
-    private void Back(object sender, EventArgs e)
-    {
-      Navigation.PopAsync();
+            InitializeComponent();
+            PrepareAddHandlers();
+            RenderDiceButtons();
+        }
+
+        private void Add(D type, View sender)
+        {
+            sender.FadeTo(0.5, 150);
+            Vibrator.Vibrate(150, 50);
+            Set.Add(type);
+            sender.FadeTo(1.0, 150);
+        }
+
+        private Dictionary<D, EventHandler> AddHandlers;
+        private void PrepareAddHandlers()
+        {
+            AddHandlers = new Dictionary<D, EventHandler>();
+            foreach (D type in DiceType.Types)
+                AddHandlers.Add(type, (object sender, EventArgs e) => Add(type, sender as View));
+        }
+
+        private const int START_ROW = 1;
+        private const int START_COLUMN = 1;
+        private const int ROW_SIZE = 3;
+        private void RenderDiceButtons()
+        {
+            int row = START_ROW;
+            int column = START_COLUMN;
+            foreach (D type in DiceType.Types)
+            {
+                var die = DiceType.get(type);
+                var dieItem = new ImageButton();
+                dieItem.Source = DiceRenderer.Image(type, die.max);
+                dieItem.Clicked += AddHandlers[type];
+
+                DiceGrid.Children.Add(dieItem, column, row);
+                column++;
+                if (column == START_COLUMN + ROW_SIZE)
+                {
+                    column = START_COLUMN;
+                    row++;
+                }
+            }
+        }
+
+        private void Back(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
+        }
     }
-  } 
 }

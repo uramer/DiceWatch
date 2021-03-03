@@ -11,16 +11,16 @@ namespace Dice.Views
     {
         private void Remove(D type)
         {
-            set.Remove(type);
+            Set.Remove(type);
             UpdateDefault();
         }
 
-        private Dictionary<D, EventHandler> removeHandlers;
+        private Dictionary<D, EventHandler> RemoveHandlers;
         private void PrepareRemoveHandlers()
         {
-            removeHandlers = new Dictionary<D, EventHandler>();
+            RemoveHandlers = new Dictionary<D, EventHandler>();
             foreach (D type in DiceType.Types)
-                removeHandlers.Add(type, (object sender, EventArgs e) => Remove(type));
+                RemoveHandlers.Add(type, (object sender, EventArgs e) => Remove(type));
         }
 
         private int RowSize(int count)
@@ -39,7 +39,7 @@ namespace Dice.Views
                 RowSpacing = 3,
                 ColumnSpacing = 3
             };
-            view.BindingContext = rollResult;
+            view.BindingContext = RollResult;
             view.SetBinding(WidthProperty, "Width");
 
             for (int i = 0; i < rowSize; i++)
@@ -61,7 +61,7 @@ namespace Dice.Views
                 for (int i = 0; i < count; i++)
                 {
                     var tapGesture = new TapGestureRecognizer();
-                    tapGesture.Tapped += removeHandlers[type];
+                    tapGesture.Tapped += RemoveHandlers[type];
 
                     var dieView = DiceRenderer.Render(type, rolls[i]);
                     dieView.GestureRecognizers.Add(tapGesture);
@@ -77,8 +77,8 @@ namespace Dice.Views
                 }
             }
 
-            rollResult.Content = view;
-            totalLabel.Text = result.total?.ToString() ?? "";
+            RollResult.Content = view;
+            TotalLabel.Text = result.total?.ToString() ?? "";
         }
     }
 }

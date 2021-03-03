@@ -8,7 +8,7 @@
     BackgroundColor="Gray">
   <ContentPage.Content>
     <Grid
-        x:Name="diceGrid"
+        x:Name="DiceGrid"
         HorizontalOptions="Center"
         VerticalOptions="Center"
         RowSpacing="3"

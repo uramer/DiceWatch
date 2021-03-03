@@ -1,82 +1,82 @@
-﻿using Dice.Services;
-using System;
+﻿using System;
 using Xamarin.Forms;
 
 namespace Dice.Views
 {
-  public partial class RollPage : ContentPage
-  {
-    private App app;
-    private bool appeared;
-    public RollPage()
+    public partial class RollPage : ContentPage
     {
-      appeared = false;
-      app = (App)Application.Current;
+        private App App;
+        private bool Appeared;
 
-      InitializeComponent();
+        public RollPage()
+        {
+            Appeared = false;
+            App = (App)Application.Current;
 
-      PreparePaging();
-      app.Loaded += Loaded;
+            InitializeComponent();
 
-      PrepareRemoveHandlers();
+            PreparePaging();
+            App.Loaded += Loaded;
+
+            PrepareRemoveHandlers();
+        }
+
+        private void Loaded(object sender = null, EventArgs e = null)
+        {
+            SwitchPage(0);
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Appeared = true;
+            UpdateDefault();
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnAppearing();
+            Appeared = false;
+        }
+
+        private void UpdateRoll()
+        {
+            RenderResult(Set.Roll());
+        }
+
+        private void UpdateDefault()
+        {
+            RenderResult(Set.Default());
+        }
+
+        public void Clear()
+        {
+            Set.Clear();
+            UpdateDefault();
+        }
+
+        public void Discard()
+        {
+            SetCollection.Discard(Page);
+            if (SetCollection.Count() == 0 || Page == 0)
+                ShowPage(0);
+            else
+                PrevPage();
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ClearPage(this));
+        }
+
+        private void Add_Click(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new DicePage(Set));
+        }
+
+        private void Roll_Click(object sender, EventArgs e)
+        {
+            UpdateRoll();
+        }
     }
-
-    private void Loaded(object sender = null, EventArgs e = null)
-    {
-      SwitchPage(0);
-    }
-
-    protected override void OnAppearing()
-    {
-      base.OnAppearing();
-      appeared = true;
-      UpdateDefault();
-    }
-
-    protected override void OnDisappearing()
-    {
-      base.OnAppearing();
-      appeared = false;
-    }
-
-    private void UpdateRoll()
-    {
-      RenderResult(set.Roll());
-    }
-
-    private void UpdateDefault()
-    {
-      RenderResult(set.Default());
-    }
-
-    public void Clear()
-    {
-      set.Clear();
-      UpdateDefault();
-    }
-
-    public void Discard()
-    {
-      setCollection.Discard(page);
-      if (setCollection.Count() == 0 || page == 0)
-        ShowPage(0);
-      else
-        PrevPage();
-    }
-
-    private void Clear_Click(object sender, EventArgs e)
-    {
-      Navigation.PushAsync(new ClearPage(this));
-    }
-
-    private void Add_Click(object sender, EventArgs e)
-    {
-      Navigation.PushAsync(new DicePage(set));
-    }
-
-    private void Roll_Click(object sender, EventArgs e)
-    {
-      UpdateRoll();
-    }
-  }
 }

@@ -5,31 +5,31 @@ using Tizen.Wearable.CircularUI.Forms;
 
 namespace Dice.Views
 {
-  public partial class NewPage : ContentPage
-  {
-    private DiceSetCollection provider;
-    private RollPage rollPage;
-
-    public NewPage(DiceSetCollection provider, RollPage rollPage)
+    public partial class NewPage : ContentPage
     {
-      this.provider = provider;
-      this.rollPage = rollPage;
-      InitializeComponent();
+        private readonly DiceSetCollection SetCollection;
+        private readonly RollPage RollPage;
 
-      RotaryEventManager.Rotated += OnRotated;
-    }
+        public NewPage(DiceSetCollection setCollection, RollPage rollPage)
+        {
+            SetCollection = setCollection;
+            RollPage = rollPage;
 
-    private void New(object sender, EventArgs e)
-    {
-      provider.Get();
-      rollPage.NextPage();
-      Navigation.PopAsync();
-    }
+            InitializeComponent();
+            RotaryEventManager.Rotated += OnRotated;
+        }
 
-    void OnRotated(object sender, RotaryEventArgs args)
-    {
-      if (!args.IsClockwise)
-        Navigation.PopAsync();
+        private void New(object sender, EventArgs e)
+        {
+            SetCollection.Get();
+            RollPage.NextPage();
+            Navigation.PopAsync();
+        }
+
+        void OnRotated(object sender, RotaryEventArgs args)
+        {
+            if (!args.IsClockwise)
+                Navigation.PopAsync();
+        }
     }
-  } 
 }

@@ -9,13 +9,13 @@ namespace Dice
 {
     public partial class App : Application
     {
-        public Storage storage { get; }
-        public DiceSetCollection diceSets { get; }
+        public readonly Storage Storage;
+        public readonly DiceSetCollection DiceSets;
 
         public App()
         {
-            storage = new Storage();
-            diceSets = new DiceSetCollection();
+            Storage = new Storage();
+            DiceSets = new DiceSetCollection();
             InitializeComponent();
         }
 
@@ -25,13 +25,13 @@ namespace Dice
 
         private async void LoadSets()
         {
-            diceSets.Load(await storage.ReadSets());
+            DiceSets.Load(await Storage.ReadSets());
             Loaded?.Invoke(this, new EventArgs());
         }
 
         private async void SaveSets()
         {
-            await storage.WriteSets(diceSets.Save());
+            await Storage.WriteSets(DiceSets.Save());
         }
 
         protected override void OnSleep()

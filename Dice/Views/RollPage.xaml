@@ -36,7 +36,7 @@
     <ImageButton
       Grid.Row="1"
       Grid.Column="2"
-      x:Name="addButton"
+      x:Name="AddButton"
       HorizontalOptions="Center"
       Clicked="Add_Click"
       Source="Add.png"
@@ -46,13 +46,13 @@
       Grid.Column="2"
       FontSize="7"
       HorizontalOptions="Center"
-      x:Name="totalLabel"
+      x:Name="TotalLabel"
       Padding="0,0"
     />
     <ScrollView
       Grid.Row="3"
       Grid.Column="2"
-      x:Name="rollResult"
+      x:Name="RollResult"
       HorizontalOptions="Fill"
       VerticalOptions="Fill"
     />
@@ -73,7 +73,7 @@
       <ContentView
         Grid.Row="0"
         Grid.Column="1"
-        x:Name="pageBar"
+        x:Name="PageBar"
       />
     </Grid>
 
