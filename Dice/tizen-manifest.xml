@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest package="urm.dice" version="1.0.1" api-version="4" xmlns="http://tizen.org/ns/packages">
+<manifest package="urm.dice" version="1.0.2" api-version="4" xmlns="http://tizen.org/ns/packages">
     <author email="antonuramer@gmail.com" href="https://github.com/uramer">Anton Uramer</author>
     <profile name="wearable" />
     <ui-application appid="urm.dice" exec="Dice.dll" multiple="false" nodisplay="false" taskmanage="true" type="dotnet" launch_mode="single">
